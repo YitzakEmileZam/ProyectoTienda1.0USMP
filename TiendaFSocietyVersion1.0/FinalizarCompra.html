@@ -6,7 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<style>
+    .head {
+        display: flex;
+        margin: auto;
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        max-width:1000px;
+        height:inherit;
+        overflow: hidden;
+        border: 4px solid black;
+    }
+    .titleofpaypal{
+        text-align: center;
+        
+    }
+    input[type=text] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px;
+    box-sizing: border-box;
+    }
+
     
+</style>
+<body>
+
+    <header class="titleofpaypal">
+        <h1>PAGO POR PAYPAL</h1>
+    </header>
+
+
+    <section>
+        
+        <table class="head">
+            <tr>
+                <th><img src="img/circle1.png"style="width:40%; height:40%" alt=""></th>
+                <th><img src="img/circle2.png"style="width:40%; height:40%" alt=""></th>
+                <th><img src="img/circle3.png"style="width:40%; height:40%" alt=""></th> 
+            </tr>
+            <tr>
+                <th><a href="#">Categoria</a></th>
+                <th><a  href="#" class="">Forma de pago</a></th>
+                <th><a href="#" class="">Finalizar compra</a></th>
+            </tr>
+        </table> 
+    
+        <div class="head">
+            <h1>Recibo de tu compra
+                <div>
+                    <h2>A continuacion le presentamos la confirmacion de su compra</h2>
+
+                    <form>
+                        <label for="fname">Nombre de Usuario</label>
+                        <input type="text" id="fname" name="fname">
+                        <label for="total">Monto total</label>
+                        <input type="number" id="total" name="total">
+                      </form>
+                </div>
+            <a aria-placeholder="123ab4hgf">codigo de modificacion</a>
+            <input type="text" class="codVerificacion" placeholder="no tengo fe">
+            </h1>        
+        </div>
+        
+    </section>
 </body>
 </html>

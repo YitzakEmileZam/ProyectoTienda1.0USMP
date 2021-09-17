@@ -8,76 +8,75 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <style>
-    .class{
-    align-content: center;
-    }
     
-    div{
-        
-        width: 800px;
-        border: 5px solid black;
-        padding: 40px;
-        margin-top: 80px;
-           
+
+    .headcheck {
+        display:flex;
+        margin: auto;
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        max-width:1000px;
+        height:inherit;
+        overflow: hidden;
+        border: 4px solid black;
     }
-    #mensaje {
+    .tablePrincipal{
         
-        width: 800px;
-        border: 5px solid black;
-        padding: 40px;
-        margin-top: 20px;
+        width: 90%;
+        justify-content: space-between;
+        max-width:1000px;
+        /* height:inherit; */
         
+        border: 4px solid black;
+        left: 50%;
     }
+    /* .n1{
+        padding: 10px;
+        text-align: center;
+        box-sizing: border-box;
+    } */
 
 </style>
 <body>
-
-     <div>
-        <table>
-            <tr class="">
-                <th><img src="img/circle1.png"style="width:40%; height:40%" alt=""></th>
-                <th><img src="img/circle2.png"style="width:40%; height:40%" alt=""></th>
-                <th><img src="img/circle3.png"style="width:40%; height:40%" alt=""></th> 
-            </tr>
-        
-        
-            <tr>
-                <th><a href="#">Categoria</a></th>
-                <th><a  href="#" class="">Forma de pago</a></th>
-                <th><a href="#" class="">Finalizar compra</a></th>
-            </tr>
-        </table>
-    </div>
-    <div>
-        <table>
-            <tr>
-                <th>Numero</th>
-                <th>Stock</th>
-                <th>Descripcion Productos</th>
-                <th>Imagen</th>
-                <th>Cantidad</th>
-                <th>Soles</th>
-                <th>Dolar</th>
-                <th>Total soles</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>+10</td>
-                <td>Laptop Lenovo</td>
-                <td>
-                    <img src="img/imgNoDispo.png" style="width:10%; height:10%" alt="">
-                </td>
-                <td>S/.2117.34</td>
-            </tr>
-        </table> 
+    <section>
         <div>
-            <a type="buttom" href="#">Siguiente</a>
-    <div id="mensaje">
-        <p>Querido comprador usted tiene la facilidad de pagar paypal o su tarjeta de debito o credito.</p>
-                       <p> Gracias por elegir FSociety para adquirir sus productos.</p>
-    </div>
+            <table class="headcheck">
+                <tr>
+                    <th><img src="img/circle1.png"style="width:40%; height:40%" alt=""></th>
+                    <th><img src="img/circle2.png"style="width:40%; height:40%" alt=""></th>
+                    <th><img src="img/circle3.png"style="width:40%; height:40%" alt=""></th> 
+                </tr>
+                <tr>
+                    <th><a href="#">Categoria</a></th>
+                    <th><a  href="#" class="">Forma de pago</a></th>
+                    <th><a href="#" class="">Finalizar compra</a></th>
+                </tr>
+            </table>
         </div>
-    </div>
-    
+        <div>
+            <table>
+                <tr class="tablePrincipal">
+                    
+                    <th class="n1">Numero</th>
+                    <th class="n1">Stock</th>
+                    <th class="n1">Descripcion Producto</th>
+                    <th class="n1">Imagen</th>
+                    <th class="n1">Cantidad</th>
+                    <th class="n1">Soles</th>
+                    <th class="n1">Dolar</th>
+                    <th class="n1">Total soles</th>
+                    
+                </tr>
+                
+            </table> 
+        </div>
+
+        <a type="buttom" href="#"class="buttom">Siguiente</a>
+
+        <div class="headcheck">
+            <p>Querido comprador usted tiene la facilidad de pagar paypal o su tarjeta de debito o credito. Gracias por elegir FSociety para adquirir sus productos.</p>
+        </div>
+        
+    </section>   
 </body>
-</html>
