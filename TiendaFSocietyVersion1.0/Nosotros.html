@@ -4,50 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos.css">    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
+        crossorigin="anonymous">    
     <title>Nosotros</title>
 </head>
 <style>
-    .nosotrosTexto{
-        box-shadow: 7px 7px 15px ;
-    width: 80%;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 15%;
-    }
-    .cajaTitulo{
-        
-        text-align: center;
-        
-    }
-    .mision{
-        
-        
-    }
-    .mision h3 {
-        text-align: center;
-        
-    }
-    .vision{
-        
-        /* margin-top: 0.3em; */
-        /* margin-bottom: 100px; */
-        
-    }
-    .vision h3{
-        text-align: center;
-        
-    }
-    .cajaTexto{
-       
-        column-count: 2;
-        text-align: justify;
-        border-style: solid #fff;
-    }
+   	#container{
+			background-color: white;
+			margin: 0 auto;
+			width: 1000px;
+			padding: 20px;
 
+			
+		}
+
+		article{
+			padding-top: 20px;
+			column-count: 1;
+			column-gap: 20px;
+			column-rule: dotted 4px #ccc;
+			
+		}
+        h2{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
 
 </style>
 <body>
@@ -81,32 +63,121 @@
             <h2>Tienda especializada en <strong> Productos Tecnologicos</strong>
         </div>
     </header>
-    <main class="nosotrosTexto">
-        <div class="cajaTitulo">
-            <h1>Acerca de <strong>FS</strong></h1>
-        </div>
-        <div class="cajaTexto">
-            <div>
-                <div class="mision"> 
-                 <h3>Mision</h3>
-                 <p>Somos una empresa innovadora y con gran sentido de responsabilidad social que busca el máximo beneficio de nuestros clientes a través de la calidad de nuestras soluciones, productos y servicios, manteniendo las mejores condiciones de trabajo para nuestros colaboradores y que brinda la seguridad de la información en los usuarios apalancando el cumplimiento de sus objetivos estratégicos 
-                      </p>
+    <main>
+        <section class="team contenedor" id="equipo">
+            <h3>Nuestro equipo</h3>
+            <p class="after">Conoce a los encargados de la creación de FSociety</p>
+            <div class="card">
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/nosotrosImg/dogCute.png" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>Yitzak ZP</h4>
+                        <p>Programador casi Full stack</p>
+                    </div>
                 </div>
-         
-    
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/nosotrosImg/dogCute2.jpg" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>Renzo</h4>
+                        <p>Programador casi Junior</p>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/nosotrosImg/catCute.jpg" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>Sandra R</h4>
+                        <p>Asistente, programadora casi Junior</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <div class="vision">
-                    <h3>Vision</h3>
-                    <p>Ser reconocidos como una empresa con servicios de calidad, excelencia e integralidad. Y buscar ser un aliado estratégico para nuestros clientes basados en soluciones y servicios innovadores las cuales estén a su alcance en base de nuestra responsabilidad, calidad, productividad y compromiso.
-                       atting)
-                         </p>
-                   </div>
+        </section>
+        <section class="about" id="servicio">
+            <div class="contenedor">
+                <h3>Nuestros servicios</h3>
+                <p class="after">Contamos con la más alta calidad de prodcutos</p>
+                <div class="servicios">
+                    <div class="caja-servicios">
+                        <img src="img/venta2.png" alt="">
+                        <h4>Venta</h4>
+                        <p>De una variedad de aparatos electrónicos.</p>
+                    </div>
+                    <div class="caja-servicios">
+                        <img src="img/transporte2.png" alt="">
+                        <h4>Transporte</h4>
+                        <p>Contamos con vehiculos de transporte capaces de llevarle su producto a cualquier zona del país.</p>
+                    </div>
+                    <div class="caja-servicios">
+                        <img src="img/contrato2.jpg" alt="">
+                        <h4>Contratación</h4>
+                        <p>Te ofrecemos una garantía por la adquisición de nuestros productos</p>
+                        
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <div id="container">
+            <img src="header.jpg" width="100%" alt="">
+            <article>
+                <h2>Misión</h2>
+            <p><span>
+                La misión de la FSociety es ofrecer productos de altos estandares,
+                y en el apoyo de pequeños comercializadores de productos Tecnológicos. 
+               
+            </span>            
+            <span>
+                
+            </span></p>               
+            </article>
+            <article>
+                <h2>Visión</h2>            
+            <p><span>
+                La visión del grupo FSociety es ser una tienda con un grado de prestigio alto, 
+                reconocida nacionalmente por su carácter innovador sobre la modernización del tarto comprador-vendedor, 
+                reuniendo a los productos de mayor demanda y calidad posibles; de los cuales, a traves de su adquisición, 
+                proporcionaran a nuestros clientes una grata satisfacción al comprar nuestra mercancia.
+            </span>                           
+            <span>
+                .</span></p>		
+            </article>
+            
         </div>
         
     </main>
-   
+    <div class="sticky-container">
+        <ul class="sticky">
+            <li>
+                <img src="img/facebook.jpeg" width="32" height="32">
+                <p><a href="https://www.facebook.com/programacionnet" target="_blank">Like Us on<br>Facebook</a></p>
+            </li>
+            <li>
+                <img src="img/twitter.jpeg" width="32" height="32">
+                <p><a href="https://twitter.com/noprog" target="_blank">Follow Us on<br>Twitter</a></p>
+            </li>
+            <li>
+                <img src="img/google.jpeg" width="32" height="32">
+                <p><a href="https://plus.google.com/programacionnet" target="_blank">Follow Us on<br>Google+</a></p>
+            </li>
+            <li>
+                <img src="img/linkedin.jpeg" width="32" height="32">
+                <p><a href="https://www.linkedin.com/company/programacionnet" target="_blank">Follow Us on<br>LinkedIn</a></p>
+            </li>
+            <li>
+                <img src="img/youtube.jpeg" width="32" height="32">
+                <p><a href="http://www.youtube.com/programacionnet" target="_blank">Subscribe on<br>YouYube</a></p>
+            </li>
+            <li>
+                <img src="img/pinterest.jpeg" width="32" height="32">
+                <p><a href="https://www.pinterest.com/programacionnet" target="_blank">Follow Us on<br>Pinterest</a></p>
+            </li>
+        </ul>
+    </div>
    <footer>
     <!-- <footer id="contacto"></footer> -->
     <div class="footer contenedor">
@@ -136,7 +207,7 @@
     </div>
 </footer>
 </body>
-<script src="js/jquery.js"></script>
+    <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
     <script src="js/filtro.js"></script>
 </html>
