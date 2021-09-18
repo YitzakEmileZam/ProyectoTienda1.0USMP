@@ -7,12 +7,11 @@
     <title>Pago Paypal</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
-    <title>Nosotros</title>
+        crossorigin="anonymous">    
 
 </head>
 <style>
-    .head4 {
+    /* .head4 {
         display: flex;
         margin: auto;
         width: 90%;
@@ -33,11 +32,59 @@
         margin-left: auto;
         margin-right: auto;
         min-height: 15%;
-    }
-    
+    } */
+    /*imagen*/
+    #container{            
+            background: url(img/paypal.png);
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            transition: all 1s;
+        }
+        #container:hover{
+            border-radius: 44% 56% 87% 13% / 68% 86% 14% 32% ;
+        }        
+
+    /*botones*/
+    #main-container{
+			padding-top: 200px;
+			text-align: center;
+		}
+
+		.btn{
+			border-radius: 3px;
+			display: inline-block;
+			padding: 20px 15px;
+			text-decoration: none;
+			text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+			box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+		}
+
+		.btn-green{
+			color: white;
+			background-color: #3CC93F;
+		}
+		.btn-green:hover{
+			background-color: #37B839;	
+		}
+		.btn-green:active{
+			background-color: #29962A;
+		}
+
+		.btn-red{
+			color: white;
+			background-color: #E34242;
+		}
+		.btn-red:hover{
+			background-color: #C43535;	
+		}
+		.btn-red:active{
+			background-color: #A62828;
+		}
 </style>
 
-<body>
+<body class="hidden">
     <header>
         <nav id="nav" class="nav1">
             <div class="contenedor-nav">
@@ -45,15 +92,14 @@
                     <img src="img/logo.png" alt="">
                 </div>
                 <div class="enlaces" id="enlaces">
-                    <a href="#" id="enlace-inicio" class="btn-header">Inicio</a>
+                    <a href="index.html" id="enlace-inicio" class="btn-header">Inicio</a>
                     <a href="Nosotros.html" class="btn-header">Nosotros</a>
-
-                    <a href="#" class="btn-header">Categoría</a>
-
+                    <a href="CarritoCompra.html" class="btn-header">Categoría</a>
                     <a href="#" class="btn-header">Contacto</a>
-                    <a href="CarritoCompra.html" class="btn-header"><i class="fas fa-cart-plus"></i> Carrito</a>
-                    <a href="#" class="btn-header"><i class="fas fa-user-check"></i> Registrarse</a>                    
-                    <a href="#" class="btn-header"><i class="fas fa-user"></i> Ingresar</a>
+                    <!-- <a href="CarritoCompra.html" class="btn-header"><i class="fas fa-cart-plus"></i> Carrito</a> -->
+                    <a href="registrarse.html" class="btn-header"><i class="fas fa-user-check"></i> Registrarse</a>                    
+                    <a href="IniciarSesion.html" class="btn-header"><i class="fas fa-user"></i> Ingresar</a>
+                    <button id="btn-abrir-popup" class="btn-abrir-popup"><i class="fas fa-cart-plus"></i>Carrito de Compra</button>
                 </div>
                 <div class="icono" id="open">
                     <span>&#9776;</span>
@@ -66,15 +112,14 @@
         </div>
     </header>
     
-    <main class="head4">
-        <div  class="titleofpaypal">
-            <h1>PAGO POR PAYPAL</h1>
-        </div>
-        
-    
-        
-    </main>
-   
+  
+    <div id="container">        
+    </div>
+    <div id="main-container">
+		<a href="#" class="btn btn-green">Pagar con Paypal</a>
+		<a href="FinalizarCompra.html" class="btn btn-red">Finalizar</a>
+	</div>
+
    <footer>
         <!-- <footer id="contacto"></footer> -->
         <div class="footer contenedor">

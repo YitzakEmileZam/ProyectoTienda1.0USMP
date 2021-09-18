@@ -1,84 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
-<style>
-    
-
-    .headcheck {
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkout</title>
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+            crossorigin="anonymous">
+    </head>
+    <style>        
+        .headcheck {
+            display:flex;
+            margin: auto;
+            width: 90%;
+            justify-content: space-between;
+            align-items: center;
+            max-width:1000px;
+            height:inherit;
+            overflow: hidden;
+            border: 4px solid black;
+        }
+        .tablePrincipal{
+            
+            display:flex;
+            margin: auto;
+            width: 90%;
+            justify-content: space-between;
+            align-items: center;
+            max-width:1000px;
+            height:inherit;
+            overflow: hidden;
+            border: 4px solid black;
+        }
+        .n1{
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .botonera{
         display:flex;
         margin: auto;
         width: 90%;
-        justify-content: space-between;
-        align-items: center;
-        max-width:1000px;
-        height:inherit;
-        overflow: hidden;
-        border: 4px solid black;
-    }
-    .tablePrincipal{
-        
-        display:flex;
-        margin: auto;
-        width: 90%;
-        justify-content: space-between;
-        align-items: center;
-        max-width:1000px;
-        height:inherit;
-        overflow: hidden;
-        border: 4px solid black;
-    }
-    .n1{
-        padding: 10px;
+        background: #F8F8F8;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+        border-radius: 3px;
+        font-family: 'Montserrat', sans-serif;
+        padding: 20px;
         text-align: center;
-        box-sizing: border-box;
-    }
+        max-width:1000px;
+        }
+        .botonera .btnS{
+        display:flex;
+        margin: auto;
+        text-align: center;
+        }
 
-</style>
-<body>
-    <section>
-        <div>
-            <table class="headcheck">
-                <tr>
-                    <th><img src="img/circle1.png"style="width:40%; height:40%" alt=""></th>
-                    <th><img src="img/circle2.png"style="width:40%; height:40%" alt=""></th>
-                    <th><img src="img/circle3.png"style="width:40%; height:40%" alt=""></th> 
-                </tr>
-                <tr>
-                    <th><a href="#">Categoria</a></th>
-                    <th><a  href="#" class="">Forma de pago</a></th>
-                    <th><a href="#" class="">Finalizar compra</a></th>
-                </tr>
-            </table>
+    </style>
+    <body class="hidden">
+        <div class="centrado" id="onload">
+            <div class="lds-facebook"><div></div><div></div><div></div></div>
         </div>
-        <div class="tablePrincipal">
-            <table>
-                <tr>
-                    
-                    <th class="n1">Numero</th>
-                    <th class="n1">Stock</th>
-                    <th class="n1">Descripcion Producto</th>
-                    <th class="n1">Imagen</th>
-                    <th class="n1">Cantidad</th>
-                    <th class="n1">Soles</th>
-                    <th class="n1">Dolar</th>
-                    <th class="n1">Total soles</th>
-                    
-                </tr>
-                
-            </table> 
-        </div>
+        <header>
+            <nav id="nav" class="nav1">
+                <div class="contenedor-nav">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div class="enlaces" id="enlaces">
+                        <a href="index.html" id="enlace-inicio" class="btn-header">Inicio</a>
+                        <a href="Nosotros.html" class="btn-header">Nosotros</a>
+                        <a href="CarritoCompra.html" class="btn-header">Categoría</a>
+                        <a href="#" class="btn-header">Contacto</a>
+                        <!-- <a href="CarritoCompra.html" class="btn-header"><i class="fas fa-cart-plus"></i> Carrito</a> -->
+                        <a href="registrarse.html" class="btn-header"><i class="fas fa-user-check"></i> Registrarse</a>                    
+                        <a href="IniciarSesion.html" class="btn-header"><i class="fas fa-user"></i> Ingresar</a>
+                        <button id="btn-abrir-popup" class="btn-abrir-popup"><i class="fas fa-cart-plus"></i>Carrito de Compra</button>
+                    </div>
+                    <div class="icono" id="open">
+                        <span>&#9776;</span>
+                    </div>
+                </div>
+            </nav>
+            <div class="textos">
+                <h1>FSociety</h1>
+                <h2>Tienda especializada en <strong> Productos Tecnologicos</strong>
+            </div>
+        </header>
 
-        <a type="buttom" href="#"class="buttom">Siguiente</a>
 
-        <div class="headcheck">
-            <p>Querido comprador usted tiene la facilidad de pagar paypal o su tarjeta de debito o credito. Gracias por elegir FSociety para adquirir sus productos.</p>
-        </div>
+
+        <section>
+            <div>
+                <table class="headcheck">
+                    <tr>
+                        <th><img src="img/circle1.png"style="width:40%; height:40%" alt=""></th>
+                        <th><img src="img/circle2.png"style="width:40%; height:40%" alt=""></th>
+                        <th><img src="img/circle3.png"style="width:40%; height:40%" alt=""></th> 
+                    </tr>
+                    <tr>
+                        <th><a href="CarritoCompra.html">Categoria</a></th>
+                        <th><a  href="#" class="">Forma de pago</a></th>
+                        <th><a href="FinalizarCompra.html" class="">Finalizar compra</a></th>
+                    </tr>
+                </table>
+            </div>
+            <div class="tablePrincipal">
+                <table>
+                    <tr>                        
+                        <th class="n1">Id</th>                        
+                        <th class="n1">Descripcion Producto</th>                        
+                        <th class="n1">Cantidad</th>
+                        <th class="n1">Precio Soles</th>
+                        <th class="n1">Total soles</th>                        
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Producto1</td>
+                        <td>4</td>
+                        <td>1200</td>
+                        <td>4800</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Producto2</td>
+                        <td>4</td>
+                        <td>1600</td>
+                        <td>6400</td>
+                    </tr>  
+                    <tr>
+                        <td>3</td>
+                        <td>Producto3</td>
+                        <td>4</td>
+                        <td>3500</td>
+                        <td>14000</td>
+                    </tr>  
+                    <th scope="row" colspan="2">Total</th>
+                    <td>25200</td>            
+                </table> 
+            </div>
+            <div class="botonera">
+                <a href="Paypal.html" class="btnS">Siguiente</a>
+                <a href="index.html"class="btnA">Anterior</a>
+            </div>
         
-    </section>   
-</body>
+            <div class="headcheck">
+                <p>Querido comprador usted tiene la facilidad de pagar paypal o su tarjeta de debito o credito. Gracias por elegir FSociety para adquirir sus productos.</p>
+            </div>        
+        </section>
+        <footer>
+            <!-- <footer id="contacto"></footer> -->
+            <div class="footer contenedor">
+                <div class="marca-logo">
+                    <img src="img/logoTM2.png" alt="">
+                </div>
+                        
+                <div class="iconos">
+                        <li>
+                            <!-- <a class="fab fa-whatsapp" ></a> -->
+                            <!-- <i class="fab fa-whatsapp"></i> -->
+                        </li>        
+                                                
+                </div>
+                
+                    <div class="iconos">            
+                        <p>Contactanos en: Av revolucion 1977, Villa El salvador 15834 (01) 2873419</p>
+                        <p>Sobre nosotros: 
+                            Nuestra empresa
+                            Terminos y condiciones </p>
+                        <p>Servicios al cliente:
+                            Preguntas frecuentes
+                            Politicas de envio 
+                            Libro de reclamaciones
+                        </p>
+        
+                    </div>
+                </div>
+        </footer>  
+        <script src="js/jquery.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/filtro.js"></script>
+    </body>
+</html>

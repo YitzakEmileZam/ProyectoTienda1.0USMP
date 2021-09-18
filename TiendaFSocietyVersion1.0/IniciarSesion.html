@@ -4,51 +4,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos2.css">
-    <title>IS</title>
+    <title>IniciarSesión</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
 </head>
-<body>
-    <div class="page">
-        <div class="container">
-          <div class="left">
-            <div class="login">Login</div>
-            <div class="eula">By logging in you agree to the ridiculously long terms that you didn't bother to read</div>
-          </div>
-          <div class="right">
-            <svg viewBox="0 0 320 300">
-              <defs>
-                <linearGradient
-                                inkscape:collect="always"
-                                id="linearGradient"
-                                x1="13"
-                                y1="193.49992"
-                                x2="307"
-                                y2="193.49992"
-                                gradientUnits="userSpaceOnUse">
-                  <stop
-                        style="stop-color:#ff00ff;"
-                        offset="0"
-                        id="stop876" />
-                  <stop
-                        style="stop-color:#ff0000;"
-                        offset="1"
-                        id="stop878" />
-                </linearGradient>
-              </defs>
-              <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
-            </svg>
-            <div class="form">
-              <label for="email">Email</label>
-              <input type="email" id="email">
-              <label for="password">Password</label>
-              <input type="password" id="password">
-              <input type="submit" id="submit" value="Submit">
-            </div>
-          </div>
-        </div>
-      </div>
-      <script src="js/jquery.js"></script>
-  <script src="js/iniciarSesion.js"></script>
+<style>
+  	form{
+			background-color: white;
+			border-radius: 3px;
+			color: #999;
+			font-size: 0.8em;
+			padding: 20px;
+			margin: 0 auto;
+			width: 300px;
+		}
 
+		input, textarea{
+			border: 0;
+			outline: none;
+
+			width: 280px;
+		}
+
+		.field{
+			border: solid 1px #ccc;
+			padding: 10px;
+
+			
+		}
+
+		.field:focus{
+			border-color: #18A383;
+		}
+
+		.center-content{
+			text-align: center;
+		}
+    /*botones*/
+    .btn{
+	border-radius: 3px;
+	display: inline-block;
+	padding: 20px 15px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+}
+
+.btn-green{
+	color: white;
+	background-color: #3CC93F;
+}
+.btn-green:hover{
+	background-color: #37B839;	
+}
+.btn-green:active{
+	background-color: #29962A;
+}
+
+</style>
+<body class="hidden">
+  <div class="centrado" id="onload">
+    <div class="lds-facebook"><div></div><div></div><div></div></div>
+</div>
+<header>
+    <nav id="nav" class="nav1">
+        <div class="contenedor-nav">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="enlaces" id="enlaces">
+                <a href="index.html" id="enlace-inicio" class="btn-header">Inicio</a>
+                <a href="Nosotros.html" class="btn-header">Nosotros</a>
+
+                <a href="CarritoCompra.html" class="btn-header">Categoría</a>
+
+                <a href="contacto.html" class="btn-header">Contacto</a>
+                <!-- <a href="CarritoCompra.html" class="btn-header"><i class="fas fa-cart-plus"></i> Carrito</a> -->
+                <a href="registrarse.html" class="btn-header"><i class="fas fa-user-check"></i> Registrarse</a>                    
+                <a href="IniciarSesion.html" class="btn-header"><i class="fas fa-user"></i> Ingresar</a>
+                <button id="btn-abrir-popup" class="btn-abrir-popup"><i class="fas fa-cart-plus"></i>Carrito de Compra</button>
+            </div>
+            <div class="icono" id="open">
+                <span>&#9776;</span>
+            </div>
+        </div>
+    </nav>
+    <div class="textos">
+        <h1>FSociety</h1>
+        <h2>Tienda especializada en <strong> Productos Tecnologicos</strong>
+    </div>
+</header>
+
+<form action="">
+  <p>Nombre:</p>
+  <input type="text" class="field"> <br/>
+
+  <p>Correo electrónico:</p>
+  <input type="text" class="field"> <br/>
+
+  <p>Contraseña:</p>
+  <input type="password" class="field"> <br/>
+
+  <!-- <p>Mensaje:</p>
+  <textarea class="field"></textarea> <br/> -->
+  <hr>
+
+  <p class="center-content">
+    <input type="submit" class="btn btn-green" value="Enviar Datos">
+  </p>
+
+</form>
+  
+  <footer>
+    <!-- <footer id="contacto"></footer> -->
+    <div class="footer contenedor">
+        <div class="marca-logo">
+            <img src="img/logoTM2.png" alt="">
+        </div>
+                
+        <div class="iconos">
+                <li>
+                    <!-- <a class="fab fa-whatsapp" ></a> -->
+                    <!-- <i class="fab fa-whatsapp"></i> -->
+                </li>        
+                                        
+        </div>
+        
+        <div class="iconos">            
+            <p>Contactanos en: Av revolucion 1977, Villa El salvador 15834 (01) 2873419</p>
+            <p>Sobre nosotros: 
+                Nuestra empresa
+                Terminos y condiciones </p>
+            <p>Servicios al cliente:
+                Preguntas frecuentes
+                Politicas de envio 
+                Libro de reclamaciones
+            </p>
+
+        </div>
+    </div>
+</footer>
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/filtro.js"></script>
 </body>
 </html>

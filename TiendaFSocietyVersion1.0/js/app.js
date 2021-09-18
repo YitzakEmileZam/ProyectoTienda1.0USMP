@@ -32,40 +32,40 @@ items.addEventListener('click', e => { btnAumentarDisminuir(e) })
 function cargaProductos(){
     var obj= [
           {
-            "precio": 500,
+            "precio": 1200,
             "id": 1,
-            "title": "Café",
-            "thumbnailUrl": "https://picsum.photos/id/0/600"
+            "title": "Tablet",
+            "thumbnailUrl": "https://img.global.news.samsung.com/cl/wp-content/uploads/2020/03/Tab-A-Perspectiva_Gold-1.jpg"
           },
           {
-            "precio": 300,
+            "precio": 1600,
             "id": 2,
-            "title": "Pizza",
-            "thumbnailUrl": "https://picsum.photos/id/10/600"
+            "title": "Nintendo Switch",
+            "thumbnailUrl": "https://production-tailoy-repo-magento-statics.s3.amazonaws.com/imagenes/872x872/productos/i/c/o/consola-nintendo-switch-neon-47030-default-1.jpg"
           },
           {
-            "precio": 100,
+            "precio": 3500,
             "id": 3,
-            "title": "Agua",
-            "thumbnailUrl": "https://picsum.photos/id/20/600"
+            "title": "PS5",
+            "thumbnailUrl": "https://www.muycomputer.com/wp-content/uploads/2020/10/Sony-PS5-pre-venta-aumento-demanda-e1603881786569.jpg"
           },
           {
-            "precio": 50,
+            "precio": 2100,
             "id": 4,
-            "title": "Sandía",
-            "thumbnailUrl": "https://picsum.photos/id/30/600"
+            "title": "Refrigeradora",
+            "thumbnailUrl": "https://images.samsung.com/is/image/samsung/pe-ref-sbs-rs5300-rs27t5561b1-pe-jetblack-003-221963443?$720_576_PNG$"
           },
           {
-            "precio": 10,
+            "precio": 5200,
             "id": 5,
-            "title": "Mango",
-            "thumbnailUrl": "https://picsum.photos/id/40/600"
+            "title": "Máquina helado",
+            "thumbnailUrl": "https://ventuscorp.pe/wp-content/uploads/2019/10/VSP-40SMART-600x630.jpg"
           },
           {
-            "precio": 150,
+            "precio": 2300,
             "id": 6,
-            "title": "Chela",
-            "thumbnailUrl": "https://picsum.photos/id/50/600"
+            "title": "Laptop",
+            "thumbnailUrl": "https://d598hd2wips7r.cloudfront.net/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/h/a/hagrid_lumiere_blue_3.png"
           }
         ]
 
