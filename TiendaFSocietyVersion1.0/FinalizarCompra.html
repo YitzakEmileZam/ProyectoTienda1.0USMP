@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Finalizar</title>
+    
 </head>
 <style>
     .head {
@@ -17,59 +18,78 @@
         height:inherit;
         overflow: hidden;
         border: 4px solid black;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-    .titleofpaypal{
-        text-align: center;
+    .head1 {
+        display: flex;
+        margin: auto;
+        width: 90%;
+        justify-content: space-between;
+        align-items: right;
+        max-width:1000px;
+        height:inherit;
+        overflow: hidden;
+        border: 4px solid black;
         
     }
-    input[type=text] {
-    width: 100%;
-    padding: 12px;
-    margin: 8px;
-    box-sizing: border-box;
+    .titleofpaypal{
+        text-align: center;   
     }
+    .subtitle{
+        text-decoration: none;  
+    }
+    
+    
 
     
 </style>
 <body>
 
-    <header class="titleofpaypal">
-        <h1>PAGO POR PAYPAL</h1>
-    </header>
-
-
     <section>
-        
-        <table class="head">
-            <tr>
-                <th><img src="img/circle1.png"style="width:40%; height:40%" alt=""></th>
-                <th><img src="img/circle2.png"style="width:40%; height:40%" alt=""></th>
-                <th><img src="img/circle3.png"style="width:40%; height:40%" alt=""></th> 
-            </tr>
-            <tr>
-                <th><a href="#">Categoria</a></th>
-                <th><a  href="#" class="">Forma de pago</a></th>
-                <th><a href="#" class="">Finalizar compra</a></th>
-            </tr>
-        </table> 
+        <h1 class="titleofpaypal">Finalizar Compra</h1>
+
+        <div class="head">
+            <table>
+                <tr>
+                    <th><img src="img/circle1.png"style="width:40%; height:40%" alt=""></th>
+                    <th><img src="img/circle2.png"style="width:40%; height:40%" alt=""></th>
+                    <th><img src="img/circle3.png"style="width:40%; height:40%" alt=""></th> 
+                </tr>
+                <tr>
+                    <th><a href="#">Categoria</a></th>
+                    <th><a  href="#" class="">Forma de pago</a></th>
+                    <th><a>Finalizar compra</a></th>
+                </tr>
+            </table>
+        </div> 
     
         <div class="head">
             <h1>Recibo de tu compra
-                <div>
-                    <h2>A continuacion le presentamos la confirmacion de su compra</h2>
-
-                    <form>
-                        <label for="fname">Nombre de Usuario</label>
-                        <input type="text" id="fname" name="fname">
-                        <label for="total">Monto total</label>
-                        <input type="number" id="total" name="total">
-                      </form>
+                <div class="head1">
+                    
+                    <table>
+                        <tr>
+                            <th><p class="subtitle">A continuacion le presentamos la confirmacion de su compra</p></th>
+                        </tr>
+                        <tr>
+                            <td><a>Nombre de Usuario</a></td>
+                            <td><input type="text" class="" placeholder="Sara Vasquez"></imput></td>
+                        </tr>
+                        <tr>
+                            <td><a>Total</a></td>
+                            <td><input type="number" class="" placeholder="S/. 2000"></imput></td>
+                        </tr>
+                            <td><a>Codigo de Confirmacion</a></td>
+                            <td><input type="text" class="codVerificacion" placeholder="2658741230254865931"></imput></td>
+                        </tr>
+                    </table>
                 </div>
-            <a aria-placeholder="123ab4hgf">codigo de modificacion</a>
-            <input type="text" class="codVerificacion" placeholder="no tengo fe">
+
             </h1>        
         </div>
         
     </section>
+
+    
 </body>
 </html>
