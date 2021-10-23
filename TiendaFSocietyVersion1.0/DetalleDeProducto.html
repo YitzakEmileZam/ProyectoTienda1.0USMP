@@ -8,96 +8,9 @@
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="estilossand.css">
 </head>
-<style>
-    .about2{
-        background: grey;
-        height: auto;
-        }
-    .boxCategory{
-        width: 290px;
-        border: 2px solid black;
-        padding: 25px;
-        margin: 20px; 
-    }
-    .boxImages {
-        width: 40px;
-        border: 2px solid black;
-        margin-left:-40;
-        float: left;
-    }
-    .contenedor{
-    margin:auto;
-    padding: var(--margenes) 0;
-    width: 90%;
-    max-width: 1000px;
-    text-align: center;
-    overflow: hidden;
-    }
-    
-    .centerBox{
-        columns: 2;
-        
-    }
-    .calific{
-        width:min-content;
-        text-align: center;
-    }
 
-    .titleProduct{
-        font-size: 20px;
-    }
-    .payBox{
-        box-sizing: border-box;
-        width: 420px;
-        border: 2px solid black;
-        padding: 20px;
-        margin: 20px;
-    }
-    .titlePay{
-        font-size: 13px;}
-
-    #especific {
-        font-family: Arial, Helvetica, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-    }
-
-    #especific td, #especific th {
-        border: 1px solid #ddd;
-        padding: 8px;
-    }
-
-    #especific tr:nth-child(even){background-color: #f2f2f2;}
-
-    #especific tr:hover {background-color: #ddd;}
-
-    #especific th {
-        padding-top: 12px;
-        padding-bottom: 12px;
-        text-align: left;
-        background-color: #04AA6D;
-        color: white;
-    }
-    #headop{
-        margin: auto;
-        border: 4px solid black;
-        padding: 60px;
-        margin: 20px;
-        width: 97%;
-    }
-    .buttom{
-        background-color: #ffffff;
-        border: solid black 1px;
-        color:black;
-        padding: 10px 20px;
-        text-align: right;
-        font-size: 16px;
-        margin:auto;
-        cursor: pointer;
-        align-items:flex-end;
-    }
-</style>
 <body>
     <header>
         <nav id="nav" class="nav1">
@@ -127,106 +40,120 @@
         </div>
     </header>
     <main>
-        <section class="boxCategory">
-            <div>Categoria<strong>   >Para el hogar</strong></div>
-        </section>
-        <section>
-            <div class="contenedor">
-                <div class="boxImages">
-                    <img src="img/producto1.jpeg.jpeg" alt="">
-                    <img src="img/producto1.jpeg.jpeg" alt="">
-                    <img src="img/producto1.jpeg.jpeg" alt="">
-                    <img src="img/producto1.jpeg.jpeg" alt="">
+        
+        <!-- <ul class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Vehicles</a></li>
+            <li><a href="#">Vans</a></li>
+            <li><a href="#">Camper Vans</a></li>
+            <li><a href="#">1989 VW Westfalia Vanagon</a></li>
+        </ul> -->
+        <section class="boxComplete">
+            <div class="boxImages">
+                <div id="container">
+                    <img src="img/cocina1.jpg" id="imagen" width="170" height="200" alt="">
                 </div>
-                <div class="centerBox" >
-                    <div>
-                        <img src="img/catalogoProductos/producto1.jpeg.jpeg" alt="">
-                    </div>
-                    <div>
-                        <h5 class="titleProduct">Cocina Mabe eme7685cfyx0 30</h5>
-                        <img src="img/star.png" alt="">
-                        <input type="text" placeholder="1,4325 calificaciones" class=" calific">
-                    </div>
-                    <div>
-                        <h7>Cocina Mabe eme7685cfyx0 30 tiene un motor 6 veces más duradero.
-                            Sus cuchillas de acero inoxidable trituran hasta los alimentos más duros.</h7>
-                    </div> 
-                    <div class="payBox">
-                        <span class="titlePay">Cocina Mabe eme7685cfyx0 30</span>
-                        <table>
-                            <tr>
-                                <th class="titlePay">Cantidad</th>
-                                <th class="titlePay">Precio</th>
-                                <th class="titlePay">Precio Total</th>
-                            </tr>
-                            <tr>
-                                <th><input type="number" placeholder="3"></th>
-                                <th><input type="text" placeholder="1500"></th>
-                                <th><input type="text" placeholder="4500"></th>
-                            </tr>
-                        </table>
-                        <button href="#"class="buttom">PAGAR</button>
-                    </div>
+                <div id="container">
+                    <img src="img/cocina2.jpg" id="imagen" width="170" height="200" alt="">
                 </div>
-                    
-                </div> 
-                    <table id="especific">
+                <div id="container">
+                    <img src="img/cocina3.jpg" id="imagen" width="170" height="200" alt="">
+                </div>
+                <div id="container">
+                    <img src="img/cocina4.jpg" id="imagen" width="170" height="200" alt="">
+                </div>
+                <div id="container">
+                    <img src="img/cocina5.jpg" id="imagen" width="170" height="200" alt="">
+                </div>
+                <div id="container">
+                    <img src="img/cocina6.jpg" id="imagen" width="170" height="200" alt="">
+                </div>
+            </div>
+            <div class="centerBox" >
+                 <div>
+                    <h5 class="titleProduct">Cocina Mabe eme7685cfyx0 30</h5>
+                    <img src="img/star.png" alt="">
+                    <input type="text" placeholder="1,4325 calificaciones" class=" calific">
+                    <p>
+                        Cocina Mabe eme7685cfyx0 30 tiene un motor 6 veces más duradero.<br>
+                        Sus cuchillas de acero inoxidable trituran hasta los alimentos más duros.<br>
+                    </p>
+                </div>
+                <div class="payBox">
+                    <span class="titlePay">Cocina Mabe eme7685cfyx0 30</span>
+                    <table>
                         <tr>
-                            <th>Especificaciones</th>
-                            <th>Detalle</th>
+                            <th class="titlePay">Cantidad</th>
+                            <th class="titlePay">Precio</th>
+                            <th class="titlePay">Precio Total</th>
                         </tr>
                         <tr>
-                            <td>Modelo</td>
-                            <td>2137386</td>
-                        </tr>
-                        <tr>
-                            <td>Alto</td>
-                            <td>0.335</td>
-                        </tr>
-                        <tr>
-                            <td>Ancho</td>
-                            <td>0.195</td>
-                        </tr>
-                        <tr>
-                            <td>Profundidad</td>
-                            <td>0.235</td>
-                        </tr>
-                        <tr>
-                            <td>Peso(kg)</td>
-                            <td>3.8</td>
-                        </tr>
-                        <tr>
-                            <td>Garantia</td>
-                            <td>1 año</td>
-                        </tr>
-                        <tr>
-                            <td>Velocidad</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>Potencia</td>
-                            <td>700</td>
-                        </tr>
-                        <tr>
-                            <td>Velocidad</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>Material de cuchillas</td>
-                            <td>Acero inoxidable</td>
-                        </tr>
-                        <tr>
-                            <td>Material del vaso</td>
-                            <td>Vidrio refractario</td>
+                            <th><input type="number" placeholder="3"></th>
+                            <th><input type="text" placeholder="1500"></th>
+                            <th><input type="text" placeholder="4500"></th>
                         </tr>
                     </table>
-                <div>
-                
+                    <button href="#"class="buttom">PAGAR</button>
+                </div>
             </div>
         </section>
 
+        <section class="table1"> 
+            <table id="especific">
+                <tr>
+                    <th>Especificaciones</th>
+                    <th>Detalle</th>
+                </tr>
+                <tr>
+                    <td>Modelo</td>
+                    <td>2137386</td>
+                </tr>
+                <tr>
+                    <td>Alto</td>
+                    <td>0.335</td>
+                </tr>
+                <tr>
+                    <td>Ancho</td>
+                    <td>0.195</td>
+                </tr>
+                <tr>
+                    <td>Profundidad</td>
+                    <td>0.235</td>
+                </tr>
+                <tr>
+                    <td>Peso(kg)</td>
+                    <td>3.8</td>
+                </tr>
+                <tr>
+                    <td>Garantia</td>
+                    <td>1 año</td>
+                </tr>
+                <tr>
+                    <td>Velocidad</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Potencia</td>
+                    <td>700</td>
+                </tr>
+                <tr>
+                    <td>Velocidad</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Material de cuchillas</td>
+                    <td>Acero inoxidable</td>
+                </tr>
+                <tr>
+                    <td>Material del vaso</td>
+                    <td>Vidrio refractario</td>
+                </tr>
+            </table>
+        </section>
+        
+
         <section class="about2" id="servicio">
-            <div class="contenedor">
+            <div class="contenedor3">
                 <h3>Productos Similares</h3>
                 <p class="after">Siempre mejorando para ti</p>
                 <div class="servicios">
@@ -256,39 +183,41 @@
                 </div>
             </div>
         </section>
+        
         <section id="headop">
-            <div>
+            <section class="table">
                 <h7><strong>Opiniones destacadas de Usuarios</strong></h7>
-            </div>
-                <div>
-                    <div class="centerBox" >
-                        <img src="img/user.png" alt="">
-                        <h8>Sara Vasquez</h8>
-                        <img src="img/star.png" alt="">
-                    </div>
-                        <p>Al encender la Cocina sin el vaso se escucha normal, pero al ensamblar el vaso y ponerla en funcionamiento se escucha un rechinido muy molesto al moler, 
-                            es como si no acoplara bien el vaso en la licuadora. Creo que tiene un falla de fabrica. Es un ruido muy molesto el que emite al licuar.
-                            Tengo una licuadora de la misma marca desde hace años y aun funciona y al moler se escucha completamente diferente.
-                            Ademas el material de estas nuevas licuadoras es de mala calidad, un plástico muy delgado y frágil. Yo me pregunto:
-                            Desde cuando las "buenas marcas" comenzaron a hacer productos desechables.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="centerBox" >
-                        <img src="img/user.png" alt="">
-                        <h8>Sara Vasquez</h8>
-                        <img src="img/star.png" alt="">
-                    </div>
+            </section>
 
-                    <div class="text">
-                        
-                        <p>Al encender la Cocina sin el vaso se escucha normal, pero al ensamblar el vaso y ponerla en funcionamiento se escucha un rechinido muy molesto al moler, 
+            <section class="table">
+                <div class="centerBox2" >
+                    <img src="img/user.png" alt="">
+                    <h8>Sara Vasquez</h8>
+                    <img src="img/star.png" alt="">
+                </div>
+                    <p>Al encender la Cocina sin el vaso se escucha normal, pero al ensamblar el vaso y ponerla en funcionamiento se escucha un rechinido muy molesto al moler, 
                             es como si no acoplara bien el vaso en la licuadora. Creo que tiene un falla de fabrica. Es un ruido muy molesto el que emite al licuar.
                             Tengo una licuadora de la misma marca desde hace años y aun funciona y al moler se escucha completamente diferente.
                             Ademas el material de estas nuevas licuadoras es de mala calidad, un plástico muy delgado y frágil. Yo me pregunto:
                             Desde cuando las "buenas marcas" comenzaron a hacer productos desechables.</p>
-                    </div>
                 </div>
+            </section>
+            <section class="table">
+                <div class="centerBox2" >
+                    <img src="img/user.png" alt="">
+                    <h8>Sara Vasquez</h8>
+                    <img src="img/star.png" alt="">
+                </div>
+
+                <div class="text">
+                        
+                    <p>Al encender la Cocina sin el vaso se escucha normal, pero al ensamblar el vaso y ponerla en funcionamiento se escucha un rechinido muy molesto al moler, 
+                            es como si no acoplara bien el vaso en la licuadora. Creo que tiene un falla de fabrica. Es un ruido muy molesto el que emite al licuar.
+                            Tengo una licuadora de la misma marca desde hace años y aun funciona y al moler se escucha completamente diferente.
+                            Ademas el material de estas nuevas licuadoras es de mala calidad, un plástico muy delgado y frágil. Yo me pregunto:
+                            Desde cuando las "buenas marcas" comenzaron a hacer productos desechables.</p>
+                </div>
+            </section>
             <button href="#"class="buttom">Ver mas opiniones ></button>    
         </section>
     </main>

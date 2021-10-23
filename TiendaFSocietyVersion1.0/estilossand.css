@@ -1,0 +1,504 @@
+
+/* test */
+
+h2{
+	text-align: center;
+}
+
+.formbox {
+    border: 4px solid black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+	width: 60%;
+	margin: auto;
+}
+.clasificacion{
+	direction: rtl;/* right to left */
+	unicode-bidi: bidi-override;/* bidi de bidireccional */
+}
+#form {
+    width: 20px;
+    height: 50px;
+}  
+#form label {
+    font-size: 5px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  .start {
+    color: grey;
+  }
+  
+  .start:hover,
+  .start:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+  .form-group {
+	display: flex;
+	flex: 0 0 auto;
+	flex-flow: row wrap;
+	align-items: center;
+	margin-bottom: 0;
+  }
+  
+  textarea {
+	margin: auto;
+
+  }
+
+/* popup */
+
+.contenedor .btn-abrir-popup {
+	padding: 0 20px;
+	margin-bottom: 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #5E7DE3;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+	cursor: pointer;
+}
+
+.contenedor .btn-abrir-popup:hover {
+	background: rgba(94,125,227, .9);
+}
+/* ------------------------- */
+/* POPUP */
+/* ------------------------- */
+
+.overlay {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay.active {
+	visibility: visible;
+}
+
+.popup {
+	background: #F8F8F8;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup .btn-cerrar-popup {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup .btn-cerrar-popup:hover {
+	color: #000;
+}
+
+.popup h3 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	opacity: 0;
+}
+
+.popup h4 {
+	font-size: 26px;
+	font-weight: 300;
+	margin-bottom: 40px;
+	opacity: 0;
+}
+
+.popup form .contenedor-inputs {
+	opacity: 0;
+}
+
+.popup form .contenedor-inputs input {
+	width: 100%;
+	margin-bottom: 20px;
+	height: 52px;
+	font-size: 18px;
+	line-height: 52px;
+	text-align: center;
+	border: 1px solid #BBBBBB;
+}
+
+.popup form .btn-submit {
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #5E7DE3;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+}
+
+.popup form .btn-submit:hover {
+	background: rgba(94,125,227, .9);
+}
+/* ------------------------- */
+/* ANIMACIONES */
+/* ------------------------- */
+.popup.active {	transform: scale(1); opacity: 1; }
+.popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
+.popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
+.popup.active .contenedor-inputs { animation: entradaInputs 1s linear 1s forwards; }
+
+@keyframes entradaTitulo {
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaSubtitulo {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaInputs {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+/* index */
+.diagonal {
+	min-height: 200px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	position: relative;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px 5px black;
+	margin-block-end: 100px;
+}
+.section-content {
+    width: 100%;
+    position:static;
+    z-index: 2;
+  }
+  .section-mask {
+    position:absolute;
+    top: -50px;
+    bottom: -50px;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background: url(https://p4.wallpaperbetter.com/wallpaper/553/834/349/stars-galaxy-space-sombrero-galaxy-wallpaper-preview.jpg);
+    background-size: cover !important;
+    transform: skewY(3deg);
+	/* opacity: 0.8; */
+  }
+  .has-parallax {
+	background-attachment: fixed !important;
+  }
+  .servicios{
+	display: flex;
+	color:#fff;
+	justify-content: space-between;
+	margin: auto;
+	flex-wrap: wrap;
+  }
+  .caja-servicios{
+	width:30%;
+	margin: auto;
+	text-align: center;
+  }
+  .contenedor2{
+    margin:auto;
+    padding: var(--margenes) 0;
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    overflow: hidden; 
+    margin-block-end: 100px;
+    }
+    .contenedor2 h3{
+  font-size: var(--titulos);
+  color: black;
+  margin-bottom: var(--espacios);
+}
+
+.servicios2{
+	display: flex;
+	color:black;
+	justify-content: space-between;
+	margin: auto;
+	flex-wrap: wrap;
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  .caja-servicios2{
+	width:30%;
+	margin: auto;
+	text-align: center;
+  }
+
+
+/* DETALLE DE PRODUCTO */
+
+.about2{
+	background-image: url("https://p4.wallpaperbetter.com/wallpaper/584/728/851/space-nebula-stars-multiple-display-wallpaper-preview.jpg");
+	height: auto;
+	background-size: 50rem;
+	stroke-opacity: initial;
+}
+.boxCategory{
+	width: 290px;
+	border: black;
+	padding: 25px;
+	margin: 20px; 
+}
+
+.table{
+	margin-block-end: 50px;
+}
+
+.contenedor3{
+margin:auto;
+padding: var(--margenes) 0;
+width: 90%;
+max-width: 1000px;
+text-align: center;
+overflow: hidden; 
+
+}
+.contenedor3 h3{
+font-size: var(--titulos);
+color:white;
+margin-bottom: var(--espacios);
+text-shadow: 2px 2px 5px black;
+}
+
+.contenedor3 p{
+font-size: var(--subtitulos);
+font-weight: 300;
+color: white;
+text-shadow: 2px 2px 5px black;
+}
+
+.centerBox{
+	margin-block-end: 5px;
+	text-align: center;
+	line-height: 2;
+	
+}
+.calific{
+	width:min-content;
+	text-align: center;
+}
+
+.titleProduct{
+	font-size: 20px;
+}
+.payBox{
+	box-sizing: border-box;
+	width: 420px;
+	border: 2px solid black;
+	padding: 20px;
+	margin: 60px;
+	margin-left: 170px;
+}
+.titlePay{
+	font-size: 13px;}
+
+#especific {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#especific td, #especific th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+#especific tr:nth-child(even){background-color: #f2f2f2;}
+
+#especific tr:hover {background-color: #ddd;}
+
+#especific th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #04AA6D;
+	color: white;
+	
+}
+#headop{
+	margin: auto;
+	padding: 60px;
+	margin: 20px;
+	width: 97%;
+}
+.buttom{
+	background-color: #ffffff;
+	border: solid black 1px;
+	color:black;
+	padding: 10px 20px;
+	text-align: right;
+	font-size: 16px;
+	margin:auto;
+	cursor: pointer;
+	align-items:flex-end;
+}
+.table1{
+	margin-block-end: 50px;
+	margin: 50px;
+}
+
+.centerBox2{
+	margin-block-end: 5px;
+}
+
+/* categoria */
+
+.breadcrumb { 
+list-style: none; 
+overflow: hidden; 
+font: 18px Helvetica, Arial, Sans-Serif;
+margin: 40px;
+padding: 0;
+}
+.breadcrumb li { 
+float: left; 
+}
+.breadcrumb li a {
+color: white;
+text-decoration: none; 
+padding: 10px 0 10px 55px;
+background: brown; /* fallback color */
+background: hsla(34,85%,35%,1); 
+position: relative; 
+display: block;
+float: left;
+}
+.breadcrumb li a:after { 
+content: " "; 
+display: block; 
+width: 0; 
+height: 0;
+border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+border-bottom: 50px solid transparent;
+border-left: 30px solid hsla(34,85%,35%,1);
+position: absolute;
+top: 50%;
+margin-top: -50px; 
+left: 100%;
+z-index: 2; 
+}	
+.breadcrumb li a:before { 
+content: " "; 
+display: block; 
+width: 0; 
+height: 0;
+border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+border-bottom: 50px solid transparent;
+border-left: 30px solid white;
+position: absolute;
+top: 50%;
+margin-top: -50px; 
+margin-left: 1px;
+left: 100%;
+z-index: 1; 
+}	
+.breadcrumb li:first-child a {
+padding-left: 10px;
+}
+.breadcrumb li:nth-child(2) a       { background:        hsla(34,85%,45%,1); }
+.breadcrumb li:nth-child(2) a:after { border-left-color: hsla(34,85%,45%,1); }
+.breadcrumb li:nth-child(3) a       { background:        hsla(34,85%,55%,1); }
+.breadcrumb li:nth-child(3) a:after { border-left-color: hsla(34,85%,55%,1); }
+.breadcrumb li:nth-child(4) a       { background:        hsla(34,85%,65%,1); }
+.breadcrumb li:nth-child(4) a:after { border-left-color: hsla(34,85%,65%,1); }
+.breadcrumb li:nth-child(5) a       { background:        hsla(34,85%,75%,1); }
+.breadcrumb li:nth-child(5) a:after { border-left-color: hsla(34,85%,75%,1); }
+.breadcrumb li:last-child a {
+background: transparent !important;
+color: black;
+pointer-events: none;
+cursor: default;
+}
+.breadcrumb li:last-child a:after { border: 0; }
+.breadcrumb li a:hover { background: hsla(34,85%,25%,1); }
+.breadcrumb li a:hover:after { border-left-color: hsla(34,85%,25%,1) !important; }
+
+/* PRUEBA */
+
+#container{
+		perspective: 500px;
+		width: 700px;
+		margin-left: 145px;
+		float: left;
+		height: 220px;
+
+	}
+
+#imagen{
+transition: all 1s;
+}
+
+#imagen:hover{
+/* rotateZ */
+
+/* translateZ */
+
+/* scaleZ */
+transform: translateZ(200px) scaleZ(2);
+}
+
+.boxImages {
+width:700px;
+columns: 3;
+
+}        
+* {
+box-sizing: border-box;
+}
+.boxComplete {
+columns: 2;
+margin: 50px;
+
+}
