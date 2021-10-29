@@ -1,16 +1,6 @@
 
 /* test */
 
-h2{
-	text-align: center;
-}
-
-.formbox {
-    border: 4px solid black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-	width: 60%;
-	margin: auto;
-}
 .clasificacion{
 	direction: rtl;/* right to left */
 	unicode-bidi: bidi-override;/* bidi de bidireccional */
@@ -47,10 +37,6 @@ h2{
 	margin-bottom: 0;
   }
   
-  textarea {
-	margin: auto;
-
-  }
 
 /* popup */
 
@@ -500,5 +486,26 @@ box-sizing: border-box;
 .boxComplete {
 columns: 2;
 margin: 50px;
+}
 
+/* Footer */
+
+footer div{
+	columns: 2;
+}
+.container2{
+	height: 170px;
+	padding-left: 40px;
+}
+.container3{
+	padding-right: 40px;
+}
+footer p{
+	color: #f2f2f2;
+}
+.text-primary{
+	padding-left: 20px;
+}
+footer svg{
+	color: #fff;
 }

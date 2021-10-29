@@ -1,0 +1,9 @@
+.container {
+  max-width: 970px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.form-check{
+  margin: 10px;
+}

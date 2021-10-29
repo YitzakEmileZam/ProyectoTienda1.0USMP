@@ -8,55 +8,26 @@
         <link rel="stylesheet" href="estilos.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
             crossorigin="anonymous">
+        <link href="bootstrap/checkout/form-validation.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
-    <style>        
-        .headcheck {
-            display:flex;
-            margin: auto;
-            width: 90%;
-            justify-content: space-between;
-            align-items: center;
-            max-width:1000px;
-            height:inherit;
-            overflow: hidden;
-            border: 4px solid black;
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
         }
-        .tablePrincipal{
-            
-            display:flex;
-            margin: auto;
-            width: 90%;
-            justify-content: space-between;
-            align-items: center;
-            max-width:1000px;
-            height:inherit;
-            overflow: hidden;
-            border: 4px solid black;
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
         }
-        .n1{
-            padding: 10px;
-            text-align: center;
-            box-sizing: border-box;
-        }
-        .botonera{
-        display:flex;
-        margin: auto;
-        width: 90%;
-        background: #F8F8F8;
-        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-        border-radius: 3px;
-        font-family: 'Montserrat', sans-serif;
-        padding: 20px;
-        text-align: center;
-        max-width:1000px;
-        }
-        .botonera .btnS{
-        display:flex;
-        margin: auto;
-        text-align: center;
-        }
-
-    </style>
+      </style>
     <body class="hidden">
         <div class="centrado" id="onload">
             <div class="lds-facebook"><div></div><div></div><div></div></div>
@@ -90,64 +61,222 @@
 
 
 
-        <section>
+        <main>
+    
+  <div class="container">
+
+    <div class="row g-3">
+      <div class="col-md-5 col-lg-4 order-md-last ">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-muted">Tu carrito de compras</span>
+          <span class="badge bg-secondary rounded-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3" id="overlay">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            
             <div>
-                <table class="headcheck">
-                    <tr>
-                        <th><img src="img/circle1.png"style="width:40%; height:40%" alt=""></th>
-                        <th><img src="img/circle2.png"style="width:40%; height:40%" alt=""></th>
-                        <th><img src="img/circle3.png"style="width:40%; height:40%" alt=""></th> 
-                    </tr>
-                    <tr>
-                        <th><a href="CarritoCompra.html">Categoria</a></th>
-                        <th><a  href="#" class="">Forma de pago</a></th>
-                        <th><a href="FinalizarCompra.html" class="">Finalizar compra</a></th>
-                    </tr>
-                </table>
+                  <h6 class="my-0">Laptop</h6>
+                  <small class="text-muted">Descripcion</small>
+                </div>
+                <span class="text-muted">S/.2 300</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Tablet</h6>
+                  <small class="text-muted">Descripcion</small>
+                </div>
+                <span class="text-muted">S/.1 200</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">PS5</h6>
+                  <small class="text-muted">Descripcion</small>
+                </div>
+                <span class="text-muted">S/.3 500</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total</span>
+                <strong>S/.7 000</strong>
+              </li>
+              </ul>
             </div>
-            <div class="tablePrincipal">
-                <table>
-                    <tr>                        
-                        <th class="n1">Id</th>                        
-                        <th class="n1">Descripcion Producto</th>                        
-                        <th class="n1">Cantidad</th>
-                        <th class="n1">Precio Soles</th>
-                        <th class="n1">Total soles</th>                        
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Producto1</td>
-                        <td>4</td>
-                        <td>1200</td>
-                        <td>4800</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Producto2</td>
-                        <td>4</td>
-                        <td>1600</td>
-                        <td>6400</td>
-                    </tr>  
-                    <tr>
-                        <td>3</td>
-                        <td>Producto3</td>
-                        <td>4</td>
-                        <td>3500</td>
-                        <td>14000</td>
-                    </tr>  
-                    <th scope="row" colspan="2">Total</th>
-                    <td>25200</td>            
-                </table> 
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Checkout</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Se requiere un nombre válido.
+              </div>
             </div>
-            <div class="botonera">
-                <a href="Paypal.html" class="btnS">Siguiente</a>
-                <a href="index.html"class="btnA">Anterior</a>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Se requiere un apellido válido.
+              </div>
             </div>
-        
-            <div class="headcheck">
-                <p>Querido comprador usted tiene la facilidad de pagar paypal o su tarjeta de debito o credito. Gracias por elegir FSociety para adquirir sus productos.</p>
-            </div>        
-        </section>
+
+            <div class="col-12">
+              <label for="username" class="form-label">Nombre de Usuario</label>
+              <input type="useraneme" class="form-control" id="username" placeholder="Usuario" required>
+              <div class="invalid-feedback">
+                Se requiere su nombre de usuario.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email <span class="text-muted">(Opcional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Ingrese una dirección de correo electrónico válida para recibir actualizaciones de envío.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Direccion</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+              <div class="invalid-feedback">
+                Por favor introduzca su direccion de envio.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address2" class="form-label">Direccion adicional <span class="text-muted">(Opcional)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="Apartmento">
+            </div>
+
+            <div class="col-md-5">
+              <label for="country" class="form-label">Pais</label>
+              <select class="form-select" id="country" required>
+                <option value="">Elegir</option>
+                <option>Estados Unidos</option>
+                <option>Peru</option>
+                <option>Argentia</option>
+                <option>Brasil</option>
+                <option>Mexico</option>
+                <option>Bolivia</option>
+                <option>España</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor elegir un pais.
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">Capital</label>
+              <select class="form-select" id="state" required>
+                <option value="">Elegir</option>
+                <option>California</option>
+                <option>Lima</option>
+                <option>Buenos Aires</option>
+                <option>Brasilia</option>
+                <option>Ciudad de Mexico</option>
+                <option>Sucre</option>
+                <option>Madrid</option>
+              </select>
+              <div class="invalid-feedback">
+                Proporcione un estado válido.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="zip" class="form-label">Codigo Postal</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <div class="invalid-feedback">
+                Se requiere código postal.
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <div >
+            <input type="checkbox" class="form-check-input" id="same-address">
+            <label class="form-check-label" for="same-address">La dirección de envío es la misma que mi dirección de facturación.</label>
+          </div>
+
+          <div >
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">
+              Guarde esta información para la próxima vez</label>
+          </div>
+
+          <hr class="my-4">
+
+          <h4 class="mb-3">Payment</h4>
+
+          <div class="my-3">
+            <div >
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Tarjeta de Credito</label>
+            </div>
+            <div >
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Tarjeta de Debito</label>
+            </div>
+            <div >
+              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">PayPal</label>
+            </div>
+          </div>
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Numero de Tarjeta</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-muted">Verficar Numero de Tarjeta</small>
+              <div class="invalid-feedback">
+                Numero de Tarjeta requerido.
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Credit card number</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              <div class="invalid-feedback">
+                Credit card number is required
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label">Expiracion</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+              <div class="invalid-feedback">
+                Fecha de expiracion requerida.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Codigo de Seguridad requerido.
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Continuar pago</button>
+        </form>
+      </div>
+    </div>
+
+    
+  </main>
+
+ 
+</div>
+
+
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="bootstrap/checkout/form-validation.js"></script>
+    
         <footer>
             <!-- <footer id="contacto"></footer> -->
             <div class="footer contenedor">
