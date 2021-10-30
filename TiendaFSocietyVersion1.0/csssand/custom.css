@@ -12,9 +12,7 @@
 /*==============================================
     GENERAL  STYLES    
     =============================================*/
-body {
-    font-family: 'Open Sans', sans-serif;
-}
+
 
  #wrapper {
     width: 100%;
@@ -42,7 +40,7 @@ body {
     border:1px solid #f3f3f3;
 }
 h2 {
-    color: rgb(235, 15, 15);
+    color: #202020;
     font-family: Arial, Helvetica, sans-serif;
 }
 h4 {

@@ -8,14 +8,13 @@
     <link href="csssand/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
     <link href="csssand/font-awesome.css" rel="stylesheet" />
-     <!-- MORRIS CHART STYLES-->
-   
         <!-- CUSTOM STYLES-->
     <link href="csssand/custom.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-     <!-- TABLE STYLES-->
-    <link href="js/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
+   <!-- Custom styles for this template -->
+   <link href="dashboard/dashboard.css" rel="stylesheet">
+   
 </head>
 <body>
     <div id="wrapper">
@@ -23,46 +22,50 @@
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="fa fa-bar"></span>
+                    <span class="fa fa-bar"></span>
+                    <span class="fa fa-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Manuel Vasquez</a> 
+                <a class="navbar-brand" href="index.html">Inicio</a> 
             </div>
   <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
 font-size: 16px;">Ultimo acceso : 23 octubre 2020 &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Cerrar Sesion</a> </div>
-         </nav>   
-         <!-- /. NAV TOP  -->
-              <nav class="navbar-default navbar-side" role="navigation">
-          <div class="sidebar-collapse">
-              <ul class="nav" id="main-menu">
-              <li class="text-center">
-                  <img src="img/find_user.png" class="user-image img-responsive"/>
-                  </li>
-              
-                  
-                  <li>
-                      <a  href="index.html"><i class="fa fa-dashboard fa-3x"></i> Inicio</a>
-                  </li>
-                    <li>
-                      <a class="active-menu"   href="ui.html"><i class="fa fa-desktop fa-3x"></i> UI </a>
-                    </li>
-                    <li  >
-                      <a  href="tableui.html"><i class="fa fa-table fa-3x"></i> Productos Favoritos</a>
-                  </li>
-              
-             
-          </div>
-          
-      </nav>    
+        </nav>   
+           <!-- /. NAV TOP  -->
+                <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+				<li class="text-center">
+                      <li class="nav-item">
+                        <a class="nav-link" href="ui.html">
+                          <span data-feather="file"></span>
+                          Usuario
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="tableui.html">
+                          <span data-feather="shopping-cart"></span>
+                          Productos Favoritos
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="AgregarComentario.html">
+                          <span data-feather="file-text"></span>
+                          Agregar Comentario
+                        </a>
+                      </li>
+                
+            </div>
+            
+        </nav>    
         <!-- /. NAV SIDE  -->
         <div id="page-wrapper" >
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                     <h2>Productos Favoritos</h2>   
+                     <h2><strong>Productos Favoritos</strong></h2>   
                        
                     </div>
                 </div>
@@ -237,6 +240,12 @@ font-size: 16px;">Ultimo acceso : 23 octubre 2020 &nbsp; <a href="#" class="btn 
     </script>
          <!-- CUSTOM SCRIPTS -->
     <script src="jssand/custom.js"></script>
+
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+      <script src="dashboard/dashboard.js"></script>
     
    
 </body>

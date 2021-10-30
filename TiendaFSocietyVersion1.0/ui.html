@@ -12,6 +12,9 @@
     <link href="csssand/custom.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+   <!-- Custom styles for this template -->
+   <link href="dashboard/dashboard.css" rel="stylesheet">
+   
 </head>
 <body>
     <div id="wrapper">
@@ -23,33 +26,37 @@
                     <span class="fa fa-bar"></span>
                     <span class="fa fa-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Manuel Vasquez</a> 
+                <a class="navbar-brand" href="index.html">Inicio</a> 
             </div>
   <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 16px;">Ultimo acceso : 23 octubre 2020 &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Cerrar Sesion</a> </div>
+font-size: 16px;">Ultimo acceso : 23 octubre 2020 &nbsp; <a href="index.html" class="btn btn-danger square-btn-adjust">Cerrar Sesion</a> </div>
         </nav>   
            <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 				<li class="text-center">
-                    <img src="img/find_user.png" class="user-image img-responsive"/>
-					</li>
-				
-					
-                    <li>
-                        <a  href="index.html"><i class="fa fa-dashboard fa-3x"></i> Inicio</a>
-                    </li>
-                      <li>
-                        <a class="active-menu"   href="ui.html"><i class="fa fa-desktop fa-3x"></i> UI </a>
+                      <li class="nav-item">
+                        <a class="nav-link" href="ui.html">
+                          <span data-feather="file"></span>
+                          Usuario
+                        </a>
                       </li>
-                      <li  >
-                        <a  href="tableui.html"><i class="fa fa-table fa-3x"></i> Productos Favoritos</a>
-                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="tableui.html">
+                          <span data-feather="shopping-cart"></span>
+                          Productos Favoritos
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="AgregarComentario.html">
+                          <span data-feather="file-text"></span>
+                          Agregar Comentario
+                        </a>
+                      </li>
                 
-               
             </div>
             
         </nav>  
@@ -66,27 +73,23 @@ font-size: 16px;">Ultimo acceso : 23 octubre 2020 &nbsp; <a href="#" class="btn 
                  <hr />
                  <div class="row">
                     
-                      <div class="col-md-7">
+                <div class="col-md-7">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                          Perfil
-                        </div>        
-                                      
-                    <div class="panel-body"> 
-                      <img src="img/find_user.png" class="user-image img-responsive"/>
-                    <h4>Manuel Vasquez</h4>
-                    
-											<button class="btn btn-default"><i class=" fa fa-refresh "></i> Actualizar</button>
-											<button class="btn btn-primary"><i class="fa fa-edit "></i> Editar</button>
-                    
-                    <h4>Informacion</h4>
-                    <h5>Vive en San Isidro</h5>
-                    <h5>Peru</h5>
-                    <h5>Trabaja en Amazon</h5>
-                   
+                        </div>                      
+                        <div class="panel-body"> 
+                            <img src="img/find_user.png" class="user-image img-responsive"/>
+                            <h4>Manuel Vasquez</h4>
+							<button class="btn btn-default"><i class=" fa fa-refresh "></i> Actualizar</button>
+							<button class="btn btn-primary"><i class="fa fa-edit "></i> Editar</button>
+                            <h4>Informacion</h4>
+                            <h5>Vive en San Isidro</h5>
+                            <h5>Peru</h5>
+                            <h5>Trabaja en Amazon</h5>
+                        </div>
+                    </div>
                 </div>
-            </div>
-                          </div>
             
                            
       <div class="row">
@@ -155,5 +158,11 @@ font-size: 16px;">Ultimo acceso : 23 octubre 2020 &nbsp; <a href="#" class="btn 
     <!-- MORRIS CHART SCRIPTS -->
     <script src="jssand/morris/raphael-2.1.0.min.js"></script>
     <script src="jssand/morris/morris.js"></script>
+
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+      <script src="dashboard/dashboard.js"></script>
 </body>
 </html>
