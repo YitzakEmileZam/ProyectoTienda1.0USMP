@@ -32,10 +32,10 @@ items.addEventListener('click', e => { btnAumentarDisminuir(e) })
 function cargaProductos(){
     var obj= [
           {
-            "precio": 1200,
+            "precio": 389,
             "id": 1,
             "title": "Tablet",
-            "thumbnailUrl": "https://img.global.news.samsung.com/cl/wp-content/uploads/2020/03/Tab-A-Perspectiva_Gold-1.jpg"
+            "thumbnailUrl": "https://e39a9f00db6c5bc097f9-75bc5dce1d64f93372e7c97ed35869cb.ssl.cf1.rackcdn.com/42404562_3-0HW0NXfC-large.png"
           },
           {
             "precio": 1600,
@@ -44,28 +44,64 @@ function cargaProductos(){
             "thumbnailUrl": "https://production-tailoy-repo-magento-statics.s3.amazonaws.com/imagenes/872x872/productos/i/c/o/consola-nintendo-switch-neon-47030-default-1.jpg"
           },
           {
-            "precio": 3500,
+            "precio": 329,
             "id": 3,
-            "title": "PS5",
-            "thumbnailUrl": "https://www.muycomputer.com/wp-content/uploads/2020/10/Sony-PS5-pre-venta-aumento-demanda-e1603881786569.jpg"
+            "title": "Silla Gamer",
+            "thumbnailUrl": "https://e39a9f00db6c5bc097f9-75bc5dce1d64f93372e7c97ed35869cb.ssl.cf1.rackcdn.com/42211826-cLb0xN4P-large.jpg"
           },
           {
-            "precio": 2100,
+            "precio": 1169,
             "id": 4,
             "title": "Refrigeradora",
-            "thumbnailUrl": "https://images.samsung.com/is/image/samsung/pe-ref-sbs-rs5300-rs27t5561b1-pe-jetblack-003-221963443?$720_576_PNG$"
+            "thumbnailUrl": "https://e39a9f00db6c5bc097f9-75bc5dce1d64f93372e7c97ed35869cb.ssl.cf1.rackcdn.com/42518142-CPaShK8W-large.jpg"
           },
           {
-            "precio": 5200,
+            "precio": 199,
             "id": 5,
-            "title": "Máquina helado",
-            "thumbnailUrl": "https://ventuscorp.pe/wp-content/uploads/2019/10/VSP-40SMART-600x630.jpg"
+            "title": "Ventilador",
+            "thumbnailUrl": "https://e39a9f00db6c5bc097f9-75bc5dce1d64f93372e7c97ed35869cb.ssl.cf1.rackcdn.com/41982093_2-AR6qkmd0-large.jpg"
           },
           {
-            "precio": 2300,
+            "precio": 3149,
             "id": 6,
             "title": "Laptop",
-            "thumbnailUrl": "https://d598hd2wips7r.cloudfront.net/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/h/a/hagrid_lumiere_blue_3.png"
+            "thumbnailUrl": "https://e39a9f00db6c5bc097f9-75bc5dce1d64f93372e7c97ed35869cb.ssl.cf1.rackcdn.com/42432973_1-82OoraxQ-large.jpg"
+          },
+          {
+            "precio": 1699,
+            "id": 7,
+            "title": "Televisor",
+            "thumbnailUrl": "https://e39a9f00db6c5bc097f9-75bc5dce1d64f93372e7c97ed35869cb.ssl.cf1.rackcdn.com/42220505-jc0mqVea-large.jpg"
+          },
+          {
+            "precio": 2899,
+            "id": 8,
+            "title": "Camara",
+            "thumbnailUrl": "https://e39a9f00db6c5bc097f9-75bc5dce1d64f93372e7c97ed35869cb.ssl.cf1.rackcdn.com/img-tQCval_T-large.jpg"
+          },
+          {
+            "precio": 119,
+            "id": 9,
+            "title": "Teclado Gamer",
+            "thumbnailUrl": "https://e39a9f00db6c5bc097f9-75bc5dce1d64f93372e7c97ed35869cb.ssl.cf1.rackcdn.com/img-DxOQEqa3-large.jpg"
+          },
+          {
+            "precio": 25,
+            "id": 10,
+            "title": "Mando",
+            "thumbnailUrl": "https://e39a9f00db6c5bc097f9-75bc5dce1d64f93372e7c97ed35869cb.ssl.cf1.rackcdn.com/42301466-wOW_rFvq-large.jpg"
+          },
+          {
+            "precio": 119,
+            "id": 11,
+            "title": "Audifonos",
+            "thumbnailUrl": "https://e39a9f00db6c5bc097f9-75bc5dce1d64f93372e7c97ed35869cb.ssl.cf1.rackcdn.com/42340304-m191t6WU-large.jpg"
+          },
+          {
+            "precio": 1749,
+            "id": 12,
+            "title": "All in one",
+            "thumbnailUrl": "https://e39a9f00db6c5bc097f9-75bc5dce1d64f93372e7c97ed35869cb.ssl.cf1.rackcdn.com/42482830_3-yUKSsjk2-large.jpg"
           }
         ]
 

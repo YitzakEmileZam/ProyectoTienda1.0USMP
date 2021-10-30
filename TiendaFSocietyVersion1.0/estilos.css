@@ -115,6 +115,7 @@
     background: var(--fondo);
     height:100px;
     color:#000;
+    z-index: 9999;
   }
   
   .contenedor-nav{

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">    
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilossand.css">
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">    
     <title>Nosotros</title>
@@ -13,7 +15,7 @@
    	#container{
 			background-color: white;
 			margin: 0 auto;
-			width: 1000px;
+			width: 80%;
 			padding: 20px;
 
 			
@@ -21,14 +23,15 @@
 
 		article{
 			padding-top: 20px;
-			column-count: 1;
+			column-count: 2;
 			column-gap: 20px;
 			column-rule: dotted 4px #ccc;
 			
 		}
-        h2{
+        .tituloNs{
             text-align: center;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: lawngreen;
         }
 
 </style>
@@ -40,7 +43,7 @@
         <nav id="nav" class="nav1">
             <div class="contenedor-nav">
                 <div class="logo">
-                    <img src="img/logo.png" alt="">
+                    <img src="img/logo1.png" alt="">
                 </div>
                 <div class="enlaces" id="enlaces">
                     <a href="index.html" id="enlace-inicio" class="btn-header">Inicio</a>
@@ -50,9 +53,9 @@
 
                     <a href="contacto.html" class="btn-header">Contacto</a>
                     <!-- <a href="CarritoCompra.html" class="btn-header"><i class="fas fa-cart-plus"></i> Carrito</a> -->
-                    <a href="#" class="btn-header"><i class="fas fa-user-check"></i> Registrarse</a>                    
+                    <!-- <a href="#" class="btn-header"><i class="fas fa-user-check"></i> Registrarse</a>                  -->
                     <a href="#" class="btn-header"><i class="fas fa-user"></i> Ingresar</a>
-                    <button id="btn-abrir-popup" class="btn-abrir-popup"><i class="fas fa-cart-plus"></i>Carrito de Compra</button>
+                    <!-- <button id="btn-abrir-popup" class="btn-abrir-popup btn btn-primary"><i class="fas fa-cart-plus mr-1"></i>Carrito de Compra</button> -->
                 </div>
                 <div class="icono" id="open">
                     <span>&#9776;</span>
@@ -67,15 +70,15 @@
     <main>
         <section class="team contenedor" id="equipo">
             <h3>Nuestro equipo</h3>
-            <p class="after">Conoce a los encargados de la creación de FSociety</p>
+            <p class="after">Conoce a los fundadores de FSociety</p>
             <div class="card">
                 <div class="content-card">
                     <div class="people">
                         <img src="img/nosotrosImg/dogCute.png" alt="">
                     </div>
                     <div class="texto-team">
-                        <h4>Yitzak ZP</h4>
-                        <p>Programador casi Full stack</p>
+                        <h4>Miguel Romero Nuñez</h4>
+                        <p>Gerente de ventas</p>
                     </div>
                 </div>
                 <div class="content-card">
@@ -83,8 +86,8 @@
                         <img src="img/nosotrosImg/dogCute2.jpg" alt="">
                     </div>
                     <div class="texto-team">
-                        <h4>Renzo</h4>
-                        <p>Programador casi Junior</p>
+                        <h4>Andrea Vasquez Figueroa</h4>
+                        <p>Subgerente de ventas</p>
                     </div>
                 </div>
                 <div class="content-card">
@@ -92,8 +95,8 @@
                         <img src="img/nosotrosImg/catCute.jpg" alt="">
                     </div>
                     <div class="texto-team">
-                        <h4>Sandra R</h4>
-                        <p>Asistente, programadora casi Junior</p>
+                        <h4>Yadhira Esperanza Fernandez</h4>
+                        <p>Supervisora en ventas</p>
                     </div>
                 </div>
             </div>
@@ -101,7 +104,7 @@
         <section class="about" id="servicio">
             <div class="contenedor">
                 <h3>Nuestros servicios</h3>
-                <p class="after">Contamos con la más alta calidad de prodcutos</p>
+                <p class="after">Contamos con la más alta calidad de productos</p>
                 <div class="servicios">
                     <div class="caja-servicios">
                         <img src="img/venta2.png" alt="">
@@ -123,34 +126,32 @@
             </div>
         </section>
 
-        <div id="container">
-            <img src="header.jpg" width="100%" alt="">
-            <article>
-                <h2>Misión</h2>
-            <p><span>
-                La misión de la FSociety es ofrecer productos de altos estandares,
-                y en el apoyo de pequeños comercializadores de productos Tecnológicos. 
-               
-            </span>            
-            <span>
-                
-            </span></p>               
-            </article>
-            <article>
-                <h2>Visión</h2>            
-            <p><span>
-                La visión del grupo FSociety es ser una tienda con un grado de prestigio alto, 
-                reconocida nacionalmente por su carácter innovador sobre la modernización del tarto comprador-vendedor, 
-                reuniendo a los productos de mayor demanda y calidad posibles; de los cuales, a traves de su adquisición, 
-                proporcionaran a nuestros clientes una grata satisfacción al comprar nuestra mercancia.
-            </span>                           
-            <span>
-                .</span></p>		
-            </article>
-            
-        </div>
-        
+        <section class="team contenedor" id="equipo">
+            <h3>Misión y Visión</h3>
+            <p class="after">Conoce la visión y misión de FSociety</p>
+            <div class="card">
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/mision.jpg" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>Misión</h4>
+                        <p>La misión es ofrecer productos de altos estandares.</p>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/vision.jpg" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>Visión</h4>
+                        <p>La visión es ser una tienda con un grado de prestigio alto.</p>
+                    </div>
+                </div>               
+            </div>
+        </section>
     </main>
+    
     <div class="sticky-container">
         <ul class="sticky">
             <li>
@@ -179,34 +180,33 @@
             </li>
         </ul>
     </div>
-   <footer>
-    <!-- <footer id="contacto"></footer> -->
-    <div class="footer contenedor">
-    <div class="marca-logo">
-        <img src="img/logoTM2.png" alt="">
-    </div>
-            
-    <div class="iconos">
-            <li>
-                <!-- <a class="fab fa-whatsapp" ></a> -->
-                <!-- <i class="fab fa-whatsapp"></i> -->
-            </li>        
-                                      
-    </div>
-    
-    <div class="iconos">            
-        <p>Contactanos en: Av revolucion 1977, Villa El salvador 15834 (01) 2873419</p>
-        <p>Sobre nosotros: 
-            Nuestra empresa
-            Terminos y condiciones</p>
-        <p>Servicios al cliente:
-            Preguntas frecuentes
-            Politicas de envio 
-            Libro de reclamaciones</p>
+    <footer class="text-primary py-5">
         
-    </div>
-    </div>
-</footer>
+        <p class="float-end mb-1 container3">
+          <a href="#"><i class="fas fa-arrow-up"></i></a>
+        </p>
+     
+      <div class="container2">
+        <p><strong>FSociety</strong></p>
+        <p>Nuestra tienda esta especializada en la venta de productos tecnologicos de altos estandares.</p>
+        <p>Ofrece productos de mayor demanda y calidad.</p>
+        <p><strong>Contactanos</strong></p>
+        <p class="mb-1">Av revolucion 1977, Villa El salvador 15834</p>
+        <p class="mb-0">(01) 2873419</p>
+        <p>Formas de pago</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-paypal" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.351.351 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91.379-.27.712-.603.993-1.005a4.942 4.942 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.687 2.687 0 0 0-.76-.59l-.094-.061zM6.543 8.82l-.845 5.213v.001l-.208 1.32c-.01.066.04.123.105.123H8.14c.173 0 .32-.125.348-.296v-.005l.026-.129.48-3.043.03-.164a.873.873 0 0 1 .862-.734h.38c1.201 0 2.24-.244 3.043-.815.797-.567 1.39-1.477 1.663-2.874.229-1.175.096-2.087-.45-2.71a2.126 2.126 0 0 0-.548-.438l-.003.016c-.645 3.312-2.853 4.456-5.672 4.456H6.864a.695.695 0 0 0-.321.079z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+          <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
+          <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z"/>
+          <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1z"/>
+        </svg>
+      </div>
+    </footer>
 </body>
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>

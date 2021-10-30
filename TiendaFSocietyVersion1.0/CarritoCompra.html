@@ -4,323 +4,216 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrito de compras</title>
-    <link
-      rel="stylesheet"
+    <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"/>
+      
+
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="Producto.css">
+    <link rel="stylesheet" href="estilossand.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
   </head>  
   <style>
-    .contenedor .btn-abrir-popup {
-	padding: 0 20px;
-	margin-bottom: 20px;
-	height: 40px;
-	line-height: 40px;
-	border: none;
-	color: #fff;
-	background: #5E7DE3;
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	cursor: pointer;
-	transition: .3s ease all;
-	cursor: pointer;
-}
-
-.contenedor .btn-abrir-popup:hover {
-	background: rgba(94,125,227, .9);
-}
-/* ------------------------- */
-/* POPUP */
-/* ------------------------- */
-
-.overlay {
-	background: rgba(0,0,0,.3);
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	align-items: center;
-	justify-content: center;
-	display: flex;
-	visibility: hidden;
-}
-
-.overlay.active {
-	visibility: visible;
-}
-
-.popup {
-	background: #F8F8F8;
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
-	padding: 20px;
-	text-align: center;
-	width: 600px;
-	
-	transition: .3s ease all;
-	transform: scale(0.7);
-	opacity: 0;
-}
-
-.popup .btn-cerrar-popup {
-	font-size: 16px;
-	line-height: 16px;
-	display: block;
-	text-align: right;
-	transition: .3s ease all;
-	color: #BBBBBB;
-}
-
-.popup .btn-cerrar-popup:hover {
-	color: #000;
-}
-
-.popup h3 {
-	font-size: 36px;
-	font-weight: 600;
-	margin-bottom: 10px;
-	opacity: 0;
-}
-
-.popup h4 {
-	font-size: 26px;
-	font-weight: 300;
-	margin-bottom: 40px;
-	opacity: 0;
-}
-
-.popup form .contenedor-inputs {
-	opacity: 0;
-}
-
-.popup form .contenedor-inputs input {
-	width: 100%;
-	margin-bottom: 20px;
-	height: 52px;
-	font-size: 18px;
-	line-height: 52px;
-	text-align: center;
-	border: 1px solid #BBBBBB;
-}
-
-.popup form .btn-submit {
-	padding: 0 20px;
-	height: 40px;
-	line-height: 40px;
-	border: none;
-	color: #fff;
-	background: #5E7DE3;
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	cursor: pointer;
-	transition: .3s ease all;
-}
-
-.popup form .btn-submit:hover {
-	background: rgba(94,125,227, .9);
-}
-/* ------------------------- */
-/* ANIMACIONES */
-/* ------------------------- */
-.popup.active {	transform: scale(1); opacity: 1; }
-.popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
-.popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
-.popup.active .contenedor-inputs { animation: entradaInputs 1s linear 1s forwards; }
-
-@keyframes entradaTitulo {
-	from {
-		opacity: 0;
-		transform: translateY(-25px);
-	}
-
-	to {
-		transform: translateY(0);
-		opacity: 1;
-	}
-}
-
-@keyframes entradaSubtitulo {
-	from {
-		opacity: 0;
-		transform: translateY(25px);
-	}
-
-	to {
-		transform: translateY(0);
-		opacity: 1;
-	}
-}
-
-@keyframes entradaInputs {
-	from { opacity: 0; }
-	to { opacity: 1; }
-}
+    
   </style>
+
   <body class="hidden">
-  <div class="centrado" id="onload">
-      <div class="lds-facebook"><div></div><div></div><div></div></div>
-  </div>
-  <header>
-      <nav id="nav" class="nav1">
-          <div class="contenedor-nav">
-              <div class="logo">
-                  <img src="img/logo.png" alt="">
-              </div>
-              <div class="enlaces" id="enlaces">
-                  <a href="index.html" id="enlace-inicio" class="btn-header">Inicio</a>
-                  <a href="Nosotros.html" class="btn-header">Nosotros</a>
-                  <a href="#" class="btn-header">Categoría</a>
-                  <a href="contacto.html" class="btn-header">Contacto</a>
-                  <!-- <a href="CarritoCompra.html" class="btn-header"><i class="fas fa-cart-plus"></i> Carrito</a> -->
-                  <a href="registrarse.html" class="btn-header"><i class="fas fa-user-check"></i> Registrarse</a>                    
-                  <a href="IniciarSesion.html" class="btn-header"><i class="fas fa-user"></i> Ingresar</a>
-                  <button id="btn-abrir-popup" class="btn-abrir-popup"><i class="fas fa-cart-plus"></i>Carrito de Compra</button>
-              </div>
-              <div class="icono" id="open">
-                  <span>&#9776;</span>
-              </div>
-          </div>
-      </nav>
-      <div class="textos">
-          <h1>FSociety</h1>
-          <h2>Tienda especializada en <strong> Productos Tecnologicos</strong>
-      </div>
-  </header>
- 
-    <div class="container">
-    
-      <h4>Productos</h4>
-      <div class="row" id="cards"></div>
-       
+    <div class="centrado" id="onload">
+        <div class="lds-facebook"><div></div><div></div><div></div></div>
     </div>
 
-    
-    
-    
-
-    <template id="template-card">
-      <div class="col-4 mb-2">
-        <div class="card" style="width: 70%;height: 100%;">
-          <div class="card-head">            
-            <img src="" alt="" width="100%" height="95%">
-          </div>
-          <div class="card-body text-center">
-            <h5>Titulo</h5>
-            <p>precio</p>
-            <button class="btn btn-dark">Comprar</button>
-          </div>
+    <header>
+        <nav id="nav" class="nav1">
+            <div class="contenedor-nav">
+                <div class="logo">
+                    <img src="img/logo1.png" alt="">
+                </div>
+                <div class="enlaces" id="enlaces">
+                    <a href="index.html" id="enlace-inicio" class="btn-header">Inicio</a>
+                    <a href="Nosotros.html" class="btn-header">Nosotros</a>
+                    <a href="#" class="btn-header">Categoría</a>
+                    <a href="contacto.html" class="btn-header">Contacto</a>
+                    <!-- <a href="CarritoCompra.html" class="btn-header"><i class="fas fa-cart-plus"></i> Carrito</a> -->
+                    <!-- <a href="registrarse.html" class="btn-header"><i class="fas fa-user-check"></i> Registrarse</a>               -->
+                    <a href="IniciarSesion.html" class="btn-header"><i class="fas fa-user"></i> Ingresar</a>
+                    <button id="btn-abrir-popup" class="btn-abrir-popup btn btn-primary"><i class="fas fa-cart-plus mr-1"></i>Carrito de Compra</button>
+                </div>
+                <div class="icono" id="open">
+                    <span>&#9776;</span>
+                </div>
+            </div>
+        </nav>
+        <div class="textos">
+            <h1>FSociety</h1>
+            <h2>Tienda especializada en <strong> Productos Tecnologicos</strong>
         </div>
-      </div>      
-    </template>
-
-    <div class="overlay" id="overlay">
-			<div class="popup" id="popup">
-				<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-				<h3>Carrito de compra</h3>
-				<h4>Puedes añadir tus productos.</h4>
-				<form action="">
-					<div class="contenedor-inputs">
-					
-            <h4>Carrito de compras</h4>
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Item</th>
-                  <th scope="col">Cantidad</th>
-                  <th scope="col">Acción</th>
-                  <th scope="col">Total</th>
-                </tr>
-              </thead>
-              <tbody id="items"></tbody>
-              <tfoot>
-                <tr id="footer">
-                  <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
-                </tr>
-              </tfoot>
-            </table>
-
-            <template id="template-carrito">
-              <tr>
-                <th scope="row">id</th>
-                <td>Café</td>
-                <td>1</td>
-                <td>
-                    <button class="btn btn-info btn-sm">
-                        +
-                    </button>
-                    <button class="btn btn-danger btn-sm">
-                        -
-                    </button>
-                </td>
-                <td>$ <span>500</span></td>
-              </tr>
-            </template>
-        
-            <template id="template-footer">
-                <th scope="row" colspan="2">Total productos</th>
-                <td>10</td>
-                <td>
-                    <button class="btn btn-danger btn-sm" id="vaciar-carrito">
-                        vaciar todo
-                    </button>
-                </td>
-                <td class="font-weight-bold">$ <span>5000</span></td>
-            </template>
-					</div>
-
-					<!-- <input type="submit" class="btn-submit" value="Next"> -->
-          <a href="checkout.html" class="btn-submit">Next</a>
-
-				</form>
-			</div>
-		</div>
-
-    <div class="contenedor">
-
-    </div>
-   
-
-    <footer>
-      <!-- <footer id="contacto"></footer> -->
-      <div class="footer contenedor">
-          <div class="marca-logo">
-              <img src="img/logoTM2.png" alt="">
-          </div>
-                  
-          <div class="iconos">
-                  <li>
-                      <!-- <a class="fab fa-whatsapp" ></a> -->
-                      <!-- <i class="fab fa-whatsapp"></i> -->
-                  </li>        
-                                          
-          </div>
-          
-          <div class="iconos">            
-              <p>Contactanos en: Av revolucion 1977, Villa El salvador 15834 (01) 2873419</p>
-              <p>Sobre nosotros: 
-                  Nuestra empresa
-                  Terminos y condiciones </p>
-              <p>Servicios al cliente:
-                  Preguntas frecuentes
-                  Politicas de envio 
-                  Libro de reclamaciones
-              </p>
+    </header>
   
-          </div>
+      <!-- <div class="container-Producto">
+        <br> 
+        <div class="text-center">
+          <h1 class="display-4">Productos</h1>
+          <p class="lead">Todos los productos.</p>
+          <div class="row" id="cards"></div>
+        </div>
+      </div> -->
+
+      <div class="container">
+      <br>  
+      <h4 class="text-center display-4">Productos</h4>
+      <div class="row" id="cards"></div>
+      <br>
       </div>
-  </footer>  
-    <script src="js/app.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/filtro.js"></script>
-    <script src="js/popup.js"></script>
-  </body>
+      
+
+
+      <!-- cards de productos -->
+      <template id="template-card">
+        <div class="col-4 mb-2">
+          <div class="card" style="width: 70%;height: 100%;">
+            <div class="card-head">            
+              <img src="" alt="" width="100%" height="90%">
+            </div>
+            <div class="card-body text-center">
+              <h5>Titulo</h5>
+              <p>precio</p>
+              <button class="btn btn-dark">Comprar</button>
+            </div>
+          </div>
+        </div>      
+      </template>
+
+      <!-- carrito de compra -->
+      <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+          <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+          <h3>Carrito de compra</h3>
+          <h4>Puedes añadir tus productos.</h4>
+          <form action="">
+            <div class="contenedor-inputs">
+            
+              <h4>Carrito de compras</h4>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Acción</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody id="items"></tbody>
+                <tfoot>
+                  <tr id="footer">
+                    <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                  </tr>
+                </tfoot>
+              </table>
+
+              <template id="template-carrito">
+                <tr>
+                  <th scope="row">id</th>
+                  <td>Café</td>
+                  <td>1</td>
+                  <td>
+                      <button class="btn btn-info btn-sm">
+                          +
+                      </button>
+                      <button class="btn btn-danger btn-sm">
+                          -
+                      </button>
+                  </td>
+                  <td>$ <span>500</span></td>
+                </tr>
+              </template>
+          
+              <template id="template-footer">
+                  <th scope="row" colspan="2">Total productos</th>
+                  <td>10</td>
+                  <td>
+                      <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                          vaciar todo
+                      </button>
+                  </td>
+                  <td class="font-weight-bold">$ <span>5000</span></td>
+              </template>
+            </div>
+
+            <!-- <input type="submit" class="btn-submit" value="Next"> -->
+            <a href="checkout.html" class="btn-submit">Next</a>
+
+          </form>
+        </div>
+      </div>
+
+      <br>>
+      
+     
+
+      <!-- barra de redes sociales -->
+      <div class="sticky-container">
+        <ul class="sticky">
+            <li>
+                <img src="img/facebook.jpeg" width="32" height="32">
+                <p><a href="https://www.facebook.com/programacionnet" target="_blank">Like Us on<br>Facebook</a></p>
+            </li>
+            <li>
+                <img src="img/twitter.jpeg" width="32" height="32">
+                <p><a href="https://twitter.com/noprog" target="_blank">Follow Us on<br>Twitter</a></p>
+            </li>
+            <li>
+                <img src="img/google.jpeg" width="32" height="32">
+                <p><a href="https://plus.google.com/programacionnet" target="_blank">Follow Us on<br>Google+</a></p>
+            </li>
+            <li>
+                <img src="img/linkedin.jpeg" width="32" height="32">
+                <p><a href="https://www.linkedin.com/company/programacionnet" target="_blank">Follow Us on<br>LinkedIn</a></p>
+            </li>
+            <li>
+                <img src="img/youtube.jpeg" width="32" height="32">
+                <p><a href="http://www.youtube.com/programacionnet" target="_blank">Subscribe on<br>YouYube</a></p>
+            </li>
+            <li>
+                <img src="img/pinterest.jpeg" width="32" height="32">
+                <p><a href="https://www.pinterest.com/programacionnet" target="_blank">Follow Us on<br>Pinterest</a></p>
+            </li>
+        </ul>
+    </div>
+     <footer class="text-primary py-5">
+        
+          <p class="float-end mb-1 container3">
+            <a href="#"><i class="fas fa-arrow-up"></i></a>
+          </p>
+       
+        <div class="container2">
+          <p><strong>FSociety</strong></p>
+          <p>Nuestra tienda esta especializada en la venta de productos tecnologicos de altos estandares.</p>
+          <p>Ofrece productos de mayor demanda y calidad.</p>
+          <p><strong>Contactanos</strong></p>
+          <p class="mb-1">Av revolucion 1977, Villa El salvador 15834</p>
+          <p class="mb-0">(01) 2873419</p>
+          <p>Formas de pago</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-paypal" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.351.351 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91.379-.27.712-.603.993-1.005a4.942 4.942 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.687 2.687 0 0 0-.76-.59l-.094-.061zM6.543 8.82l-.845 5.213v.001l-.208 1.32c-.01.066.04.123.105.123H8.14c.173 0 .32-.125.348-.296v-.005l.026-.129.48-3.043.03-.164a.873.873 0 0 1 .862-.734h.38c1.201 0 2.24-.244 3.043-.815.797-.567 1.39-1.477 1.663-2.874.229-1.175.096-2.087-.45-2.71a2.126 2.126 0 0 0-.548-.438l-.003.016c-.645 3.312-2.853 4.456-5.672 4.456H6.864a.695.695 0 0 0-.321.079z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+            <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
+            <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z"/>
+            <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1z"/>
+          </svg>
+        </div>
+      </footer>
+      <script src="js/app.js"></script>
+      <script src="js/jquery.js"></script>
+      <script src="js/main.js"></script>
+      <!-- <script src="js/filtro.js"></script> -->
+      <script src="js/popup.js"></script>
+</body>
 </html>

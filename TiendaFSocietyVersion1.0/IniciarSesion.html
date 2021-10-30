@@ -7,6 +7,12 @@
     <title>IniciarSesión</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <style>
 
@@ -234,15 +240,27 @@ h1{
                   </p>    
                 
                   <p class="center-content">
-                    <input type="submit" name="enviar_formulario" class="btn btn-green " value="Enviar Datos">
-                    <input type="submit" class="btn btn-blue" value="Logearse con face">
+                    <input type="submit" name="enviar_formulario" class="btn btn-green" value="Enviar Datos">
+                    <!-- <input type="submit" class="btn btn-blue" value="Logearse con face"> -->
+                    
+                    <!-- <div id="fb-root"></div>
+                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v12.0&appId=645608413112895&autoLogAppEvents=1" nonce="dmD0DKs4"></script>
+                    <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div> -->
+                    <a href="#" id="login" class="btn btn-primary btn-lg" style="width: 93% !important;">Iniciar sesión</a>
                   </p>    
-  
+                 
                   <p class="aviso">
                     <span class="obligatorio"> * </span>Los campos son obligatorios.
                   </p>   
-              
+                  
+                  <a href="registrarse.html">¿Eres Nuevo?- Regístrate</a>
+                  <br>
+                  <a href="ui.html">Bienvenido</a>
             </form>
+
+            
+        
+
       </div>  
     </div>
   
@@ -250,6 +268,43 @@ h1{
         <a href="index.html"><i class="btn fa fa-dashboard fa-3x regresar ">Regresar</i></a>
     </div>
     <script src="jssand/bootstrap.min.js"></script>
-  
+    
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+    // Your code to run since DOM is loaded and ready
+    
+    console.log("funciona");    
+    });
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '645608413112895',
+          cookie     : true,
+          xfbml      : true,
+          version    : 'v12.0'
+        });              
+        FB.AppEvents.logPageView();                 
+      };
+
+      (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+    </script> -->
+    <script>
+      // Load the SDK asynchronously
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+       <script src="js/faceb.js"></script>
 </body>
 </html>

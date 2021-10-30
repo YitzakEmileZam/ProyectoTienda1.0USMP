@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Finalizar</title>
         <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+        crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">    
 
@@ -41,7 +45,13 @@
         .subtitle{
             text-decoration: none;  
         }
-        
+        .cajitaSR{
+            background: linear-gradient(to bottom,
+    rgba(235, 94, 29, 0.6),
+    rgba(7, 18, 116, 0.6),
+    rgba(10, 51, 129, 0.45)
+    ), url(img/fondo5.jpg);
+        }
         
 
         
@@ -54,7 +64,7 @@
             <nav id="nav" class="nav1">
                 <div class="contenedor-nav">
                     <div class="logo">
-                        <img src="img/logo.png" alt="">
+                        <img src="img/logo1.png" alt="">
                     </div>
                     <div class="enlaces" id="enlaces">
                         <a href="index.html" id="enlace-inicio" class="btn-header">Inicio</a>
@@ -62,9 +72,9 @@
                         <a href="CarritoCompra.html" class="btn-header">Categoría</a>
                         <a href="#" class="btn-header">Contacto</a>
                         <!-- <a href="CarritoCompra.html" class="btn-header"><i class="fas fa-cart-plus"></i> Carrito</a> -->
-                        <a href="registrarse.html" class="btn-header"><i class="fas fa-user-check"></i> Registrarse</a>                    
+                        <!-- <a href="registrarse.html" class="btn-header"><i class="fas fa-user-check"></i> Registrarse</a>                 -->
                         <a href="IniciarSesion.html" class="btn-header"><i class="fas fa-user"></i> Ingresar</a>
-                        <button id="btn-abrir-popup" class="btn-abrir-popup"><i class="fas fa-cart-plus"></i>Carrito de Compra</button>
+                        <button id="btn-abrir-popup" class="btn-abrir-popup btn btn-primary"><i class="fas fa-cart-plus mr-1"></i>Carrito de Compra</button>
                     </div>
                     <div class="icono" id="open">
                         <span>&#9776;</span>
@@ -78,7 +88,7 @@
         </header>
 
 
-        <section>
+        <section class="cajitaSR">
             <h1 class="titleofpaypal">Finalizar Compra</h1>
 
             <div class="head">
