@@ -13,7 +13,7 @@
     font-size: 5px;
   }
   
-  input[type="radio"] {
+  input[type="radio2"] {
     display: none;
   }
   
@@ -26,7 +26,7 @@
     color: orange;
   }
   
-  input[type="radio"]:checked ~ label {
+  input[type="radio2"]:checked ~ label {
     color: orange;
   }
   .form-group {
